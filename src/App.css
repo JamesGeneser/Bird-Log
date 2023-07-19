@@ -47,7 +47,10 @@ opacity: 0.7;
 }
 .cornel-bird-call{  */
 
-
+/* .cornel-bird-call{
+  width: fit-content;
+  height: fit-content;
+} */
 
 /* @media all and (min-width: 780px ) and (max-width: 1400px) {
 .button{

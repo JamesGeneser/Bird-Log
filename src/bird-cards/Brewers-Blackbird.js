@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function AmericanCrow() {
+export default function BrewersBlackbird() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -20,8 +20,12 @@ export default function AmericanCrow() {
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">American Crow</Card.Header>
-        <Card.Img src={require("../media/images/birds/americanCrow.jpeg")} />
+        <Card.Header className="bird-name bg-none">
+          Brewer's Blackbird
+        </Card.Header>
+        <Card.Img
+          src={require("../media/images/birds/brewersBlackBirdFemale.jpeg")}
+        />
 
         <Card.Footer className="button-row ">
           <Row className="">
@@ -63,7 +67,7 @@ export default function AmericanCrow() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/americanCrowMap.jpeg")}
+            src={require("../media/images/maps/brewersBlackbirdMap.jpeg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -82,16 +86,13 @@ export default function AmericanCrow() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            {" "}
-            American Crows are familiar over much of the continent: large,
-            intelligent, all-black birds with hoarse, cawing voices. They are
-            common sights in treetops, fields, and roadsides, and in habitats
-            ranging from open woods and empty beaches to town centers. They
-            usually feed on the ground and eat almost anything—typically
-            earthworms, insects and other small animals, seeds, and fruit; also
-            garbage, carrion, and chicks they rob from nests. Their flight style
-            is unique, a patient, methodical flapping that is rarely broken up
-            with glides.
+            A bird to be seen in the full sun, the male Brewer’s Blackbird is a
+            glossy, almost liquid combination of black, midnight blue, and
+            metallic green. Females are a staid brown, without the male’s bright
+            eye or the female Red-winged Blackbird’s streaks. Common in towns
+            and open habitats of much of the West, you’ll see these long-legged,
+            ground-foraging birds on sidewalks and city parks as well as
+            chuckling in flocks atop shrubs, trees, and reeds.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -106,8 +107,7 @@ export default function AmericanCrow() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            className="cornel-bird-call"
-            src="https://macaulaylibrary.org/asset/135405/embed"
+            src="https://macaulaylibrary.org/asset/476763/embed"
             width={250}
             height={300}
           ></iframe>

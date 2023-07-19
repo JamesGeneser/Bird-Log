@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 // import Row from "react-bootstrap/Row";
 // import Col from "react-bootstrap/Col";
 import AmericanCrow from "../bird-cards/American-Crow";
+import BrewersBlackbird from "../bird-cards/Brewers-Blackbird";
 import { useState } from "react";
 // import Carousel from "react-bootstrap/Carousel";
 
@@ -16,7 +17,7 @@ export default function List() {
   return (
     <>
       <Container className="p-0 d-flex flex-column justify-content-center">
-        <AmericanCrow />{" "}
+        <AmericanCrow /> <BrewersBlackbird />
         {/* <Row className="section-title-row">
           <h2 className="section-title m-1 text-end">Black Birds</h2>
         </Row> */}
