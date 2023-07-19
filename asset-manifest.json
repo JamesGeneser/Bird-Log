@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Bird-Log/static/css/main.63ddde3b.css",
+    "main.js": "/Bird-Log/static/js/main.4f628c7e.js",
+    "static/media/brewersBlackBirdFemale.jpeg": "/Bird-Log/static/media/brewersBlackBirdFemale.60a2993c733401296963.jpeg",
+    "static/media/brewersBlackbirdMap.jpeg": "/Bird-Log/static/media/brewersBlackbirdMap.a29d3db7bf06fd6ef3bd.jpeg",
+    "static/media/americanCrow.jpeg": "/Bird-Log/static/media/americanCrow.f3f8a3ab9cd2fa488d0f.jpeg",
+    "static/media/americanCrowMap.jpeg": "/Bird-Log/static/media/americanCrowMap.a4369ddcdf226b879f2e.jpeg",
+    "static/media/birdMapKey.png": "/Bird-Log/static/media/birdMapKey.11d74786b165cbd11ffb.png",
+    "index.html": "/Bird-Log/index.html",
+    "main.63ddde3b.css.map": "/Bird-Log/static/css/main.63ddde3b.css.map",
+    "main.4f628c7e.js.map": "/Bird-Log/static/js/main.4f628c7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63ddde3b.css",
+    "static/js/main.4f628c7e.js"
+  ]
+}
