@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function BrewersBlackbird() {
+export default function BrownHeadedCowbird() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -28,13 +28,13 @@ export default function BrewersBlackbird() {
     <>
       <Card className="card m-2">
         <Card.Header className="bird-name bg-none">
-          Brewer's Blackbird
+          Brown-Headed Cowbird
         </Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/brewersBlackBirdMale.jpeg")}
+              src={require("../media/images/birds/brownHeadedCowbirdM.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
@@ -43,7 +43,7 @@ export default function BrewersBlackbird() {
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/brewersBlackBirdFemale.jpeg")}
+              src={require("../media/images/birds/brownHeadedCowbirdF.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
@@ -63,7 +63,7 @@ export default function BrewersBlackbird() {
                 Range Map
               </Button>
             </Col>
-            <Col xs={5} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="text-center">
               <Button
                 className="button "
                 variant="secondary"
@@ -72,7 +72,7 @@ export default function BrewersBlackbird() {
                 Basic Info
               </Button>
             </Col>
-            <Col xs={3} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="text-center">
               <Button
                 className="button"
                 variant="secondary"
@@ -92,7 +92,7 @@ export default function BrewersBlackbird() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/brewersBlackbirdMap.jpeg")}
+            src={require("../media/images/maps/brownHeadedCowbirdMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -111,13 +111,14 @@ export default function BrewersBlackbird() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            A bird to be seen in the full sun, the male Brewer’s Blackbird is a
-            glossy, almost liquid combination of black, midnight blue, and
-            metallic green. Females are a staid brown, without the male’s bright
-            eye or the female Red-winged Blackbird’s streaks. Common in towns
-            and open habitats of much of the West, you’ll see these long-legged,
-            ground-foraging birds on sidewalks and city parks as well as
-            chuckling in flocks atop shrubs, trees, and reeds.
+            The Brown-headed Cowbird is a stocky blackbird with a fascinating
+            approach to raising its young. Females forgo building nests and
+            instead put all their energy into producing eggs, sometimes more
+            than three dozen a summer. These they lay in the nests of other
+            birds, abandoning their young to foster parents, usually at the
+            expense of at least some of the host’s own chicks. Once confined to
+            the open grasslands of middle North America, cowbirds have surged in
+            numbers and range as humans built towns and cleared woods.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -132,10 +133,26 @@ export default function BrewersBlackbird() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/476763/embed"
+            src="https://macaulaylibrary.org/asset/210500/embed"
             width={250}
             height={300}
           ></iframe>
+          <p>
+            Male Brown-headed Cowbirds sing a liquid-sounding series of low
+            gurgling notes followed by thin sliding whistles, lasting slightly
+            longer than 1 second. Song learning in cowbirds has been an
+            interesting scientific puzzle, since the birds aren’t raised by
+            members of their own species.
+          </p>
+          <p>
+            Both male and female Brown-headed Cowbirds make a variety of
+            whistles, clicking and chattering calls. You’ll often hear flight
+            whistles, which are a series of 2–5 clear sweeping whistles with
+            occasional buzzes or trills mixed in. Females make a distinctive
+            rolling chatter that is very attractive to males. Males give their
+            own chatter calls less often. Both sexes may make a short cluck note
+            while feeding.
+          </p>
         </Modal.Body>
         <Modal.Footer>
           {/* <Image

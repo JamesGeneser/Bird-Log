@@ -31,25 +31,25 @@ export default function AmericanCrow() {
                 variant="secondary"
                 onClick={handleShowRange}
               >
-                Range
+                Range Map
               </Button>
             </Col>
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={5} lg={4} className="text-center">
               <Button
                 className="button "
                 variant="secondary"
                 onClick={handleShowDescription}
               >
-                Description
+                Basic Info
               </Button>
             </Col>
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={3} lg={4} className="text-center">
               <Button
                 className="button"
                 variant="secondary"
                 onClick={handleShowCall}
               >
-                Call
+                Calls & Songs
               </Button>
             </Col>
           </Row>

@@ -5,7 +5,10 @@ import Container from "react-bootstrap/Container";
 // import Col from "react-bootstrap/Col";
 import AmericanCrow from "../bird-cards/American-Crow";
 import BrewersBlackbird from "../bird-cards/Brewers-Blackbird";
+import BlueGrosbeak from "../bird-cards/Blue-Grosbeak";
 import { useState } from "react";
+import BrownHeadedCowbird from "../bird-cards/Brown-Headed-Cowbird";
+import BullocksOriole from "../bird-cards/Bullocks-Oriole";
 // import Carousel from "react-bootstrap/Carousel";
 
 export default function List() {
@@ -18,6 +21,9 @@ export default function List() {
     <>
       <Container className="p-0 d-flex flex-column justify-content-center">
         <AmericanCrow /> <BrewersBlackbird />
+        <BlueGrosbeak />
+        <BrownHeadedCowbird />
+        <BullocksOriole />
         {/* <Row className="section-title-row">
           <h2 className="section-title m-1 text-end">Black Birds</h2>
         </Row> */}

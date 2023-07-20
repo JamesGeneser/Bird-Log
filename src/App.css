@@ -23,6 +23,18 @@ font-weight: 600;
  } 
 .button{
   background-color: #d76a03 !important;
+  width: 100%;
+}
+
+.bird-sex{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.small-bird-title{
+  font-weight: 600;
+}
+.caption{
 
 }
 

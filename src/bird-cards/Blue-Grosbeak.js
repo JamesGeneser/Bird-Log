@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function BrewersBlackbird() {
+export default function BlueGrosbeak() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -27,14 +27,12 @@ export default function BrewersBlackbird() {
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">
-          Brewer's Blackbird
-        </Card.Header>
+        <Card.Header className="bird-name bg-none">Blue Grosbeak</Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/brewersBlackBirdMale.jpeg")}
+              src={require("../media/images/birds/blueGrosbeakM.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
@@ -43,7 +41,7 @@ export default function BrewersBlackbird() {
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/brewersBlackBirdFemale.jpeg")}
+              src={require("../media/images/birds/blueGrosbeakF.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
@@ -63,7 +61,7 @@ export default function BrewersBlackbird() {
                 Range Map
               </Button>
             </Col>
-            <Col xs={5} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="text-center">
               <Button
                 className="button "
                 variant="secondary"
@@ -72,7 +70,7 @@ export default function BrewersBlackbird() {
                 Basic Info
               </Button>
             </Col>
-            <Col xs={3} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="text-center">
               <Button
                 className="button"
                 variant="secondary"
@@ -92,7 +90,7 @@ export default function BrewersBlackbird() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/brewersBlackbirdMap.jpeg")}
+            src={require("../media/images/maps/blueGrosbeakMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -111,13 +109,13 @@ export default function BrewersBlackbird() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            A bird to be seen in the full sun, the male Brewer’s Blackbird is a
-            glossy, almost liquid combination of black, midnight blue, and
-            metallic green. Females are a staid brown, without the male’s bright
-            eye or the female Red-winged Blackbird’s streaks. Common in towns
-            and open habitats of much of the West, you’ll see these long-legged,
-            ground-foraging birds on sidewalks and city parks as well as
-            chuckling in flocks atop shrubs, trees, and reeds.
+            A large, vibrantly blue bunting with an enormous silver bill and
+            chestnut wingbars, the male Blue Grosbeak sings a rich, warbling
+            song from trees and roadside wires. He and his cinnamon-colored mate
+            often raise two broods of nestlings in a single breeding season. A
+            bird of shrubby habitats, these richly colored birds can be hard to
+            spot unless you hear them singing first. They are widespread but not
+            abundant across the southern U.S., and are expanding their range.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -132,7 +130,7 @@ export default function BrewersBlackbird() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/476763/embed"
+            src="https://macaulaylibrary.org/asset/210500/embed"
             width={250}
             height={300}
           ></iframe>

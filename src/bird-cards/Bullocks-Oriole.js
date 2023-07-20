@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function BrewersBlackbird() {
+export default function BullocksOriole() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -28,13 +28,13 @@ export default function BrewersBlackbird() {
     <>
       <Card className="card m-2">
         <Card.Header className="bird-name bg-none">
-          Brewer's Blackbird
+          Bullock's Oriole
         </Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/brewersBlackBirdMale.jpeg")}
+              src={require("../media/images/birds/bullocksOrioleM.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
@@ -43,7 +43,7 @@ export default function BrewersBlackbird() {
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/brewersBlackBirdFemale.jpeg")}
+              src={require("../media/images/birds/brownHeadedCowbirdF.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
@@ -63,7 +63,7 @@ export default function BrewersBlackbird() {
                 Range Map
               </Button>
             </Col>
-            <Col xs={5} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="text-center">
               <Button
                 className="button "
                 variant="secondary"
@@ -72,7 +72,7 @@ export default function BrewersBlackbird() {
                 Basic Info
               </Button>
             </Col>
-            <Col xs={3} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="text-center">
               <Button
                 className="button"
                 variant="secondary"
@@ -92,7 +92,7 @@ export default function BrewersBlackbird() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/brewersBlackbirdMap.jpeg")}
+            src={require("../media/images/maps/bullocksOrioleMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -111,13 +111,15 @@ export default function BrewersBlackbird() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            A bird to be seen in the full sun, the male Brewer’s Blackbird is a
-            glossy, almost liquid combination of black, midnight blue, and
-            metallic green. Females are a staid brown, without the male’s bright
-            eye or the female Red-winged Blackbird’s streaks. Common in towns
-            and open habitats of much of the West, you’ll see these long-legged,
-            ground-foraging birds on sidewalks and city parks as well as
-            chuckling in flocks atop shrubs, trees, and reeds.
+            Nimble canopy-gleaners of open woodlands in the western U.S.,
+            Bullock's Orioles dangle upside down from branches while foraging
+            and weaving their remarkable hanging nests. Adult males are
+            flame-orange with a neat line through the eye and a white wing
+            patch; females are washed in gray and orange. In addition to
+            insects, they eat fruit and nectar—a trait some bird watchers
+            capitalize on by offering nectar, jelly, and orange halves in summer
+            backyards. Listen for their whistling, chuckling song in tall trees
+            along rivers and streams.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -132,10 +134,24 @@ export default function BrewersBlackbird() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/476763/embed"
+            src="https://macaulaylibrary.org/asset/402715/embed"
             width={250}
             height={300}
           ></iframe>
+          <p>
+            Bullock's Oriole songs are about 3 seconds long, composed of rich
+            whistled notes interspersed with rattles, often introduced by gruff
+            scratchy notes. The timbre is reminiscent of a child's squeaky-toy.
+            The male's and female's songs are similar in rhythm, pitch, and
+            quality, but the female's final notes are harsher. Females may sing
+            repeatedly from the ground; males usually sing only in trees, often
+            from an inconspicuous perch.
+          </p>
+          <p>
+            Both sexes utter a harsh, chattering rattle—sometimes in flight—to
+            signal alarm or maintain contact, or when mobbing or scolding. They
+            also give a sharp one-note call.
+          </p>
         </Modal.Body>
         <Modal.Footer>
           {/* <Image
