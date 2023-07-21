@@ -63,7 +63,7 @@ export default function BrewersBlackbird() {
                 Range Map
               </Button>
             </Col>
-            <Col xs={5} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="text-center">
               <Button
                 className="button "
                 variant="secondary"
@@ -72,7 +72,7 @@ export default function BrewersBlackbird() {
                 Basic Info
               </Button>
             </Col>
-            <Col xs={3} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="text-center">
               <Button
                 className="button"
                 variant="secondary"

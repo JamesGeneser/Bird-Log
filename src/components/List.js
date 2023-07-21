@@ -9,6 +9,9 @@ import BlueGrosbeak from "../bird-cards/Blue-Grosbeak";
 import { useState } from "react";
 import BrownHeadedCowbird from "../bird-cards/Brown-Headed-Cowbird";
 import BullocksOriole from "../bird-cards/Bullocks-Oriole";
+import CommonGrackle from "../bird-cards/Common-Grackle";
+import RedWingedBb from "../bird-cards/Red-Winged-Blackbird";
+import EuropeanStarling from "../bird-cards/European-Starling";
 // import Carousel from "react-bootstrap/Carousel";
 
 export default function List() {
@@ -24,6 +27,9 @@ export default function List() {
         <BlueGrosbeak />
         <BrownHeadedCowbird />
         <BullocksOriole />
+        <CommonGrackle />
+        <RedWingedBb />
+        <EuropeanStarling />
         {/* <Row className="section-title-row">
           <h2 className="section-title m-1 text-end">Black Birds</h2>
         </Row> */}

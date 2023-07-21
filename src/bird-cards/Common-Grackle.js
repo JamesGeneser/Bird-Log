@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function BullocksOriole() {
+export default function CommonGrackle() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -27,14 +27,12 @@ export default function BullocksOriole() {
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">
-          Bullock's Oriole
-        </Card.Header>
+        <Card.Header className="bird-name bg-none">Common Grackle</Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/bullocksOrioleM.jpeg")}
+              src={require("../media/images/birds/commonGrackleM.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
@@ -43,7 +41,7 @@ export default function BullocksOriole() {
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/bullocksOrioleF.jpeg")}
+              src={require("../media/images/birds/commonGrackleF.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
@@ -92,7 +90,7 @@ export default function BullocksOriole() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/bullocksOrioleMap.jpg")}
+            src={require("../media/images/maps/commonGrackleMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -111,15 +109,14 @@ export default function BullocksOriole() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Nimble canopy-gleaners of open woodlands in the western U.S.,
-            Bullock's Orioles dangle upside down from branches while foraging
-            and weaving their remarkable hanging nests. Adult males are
-            flame-orange with a neat line through the eye and a white wing
-            patch; females are washed in gray and orange. In addition to
-            insects, they eat fruit and nectar—a trait some bird watchers
-            capitalize on by offering nectar, jelly, and orange halves in summer
-            backyards. Listen for their whistling, chuckling song in tall trees
-            along rivers and streams.
+            Common Grackles are blackbirds that look like they've been slightly
+            stretched. They're taller and longer tailed than a typical
+            blackbird, with a longer, more tapered bill and glossy-iridescent
+            bodies. Grackles walk around lawns and fields on their long legs or
+            gather in noisy groups high in trees, typically evergreens. They eat
+            many crops (notably corn) and nearly anything else as well,
+            including garbage. In flight their long tails trail behind them,
+            sometimes folded down the middle into a shallow V shape.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -134,23 +131,21 @@ export default function BullocksOriole() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/402715/embed"
+            src="https://macaulaylibrary.org/asset/440377/embed"
             width={250}
             height={300}
           ></iframe>
           <p>
-            Bullock's Oriole songs are about 3 seconds long, composed of rich
-            whistled notes interspersed with rattles, often introduced by gruff
-            scratchy notes. The timbre is reminiscent of a child's squeaky-toy.
-            The male's and female's songs are similar in rhythm, pitch, and
-            quality, but the female's final notes are harsher. Females may sing
-            repeatedly from the ground; males usually sing only in trees, often
-            from an inconspicuous perch.
+            Common Grackles make a variety of squeaks, whistles, and croaks. The
+            typical song, made by both males and females, is a guttural
+            readle-eak accompanied by high-pitched, clear whistles. It lasts
+            just less than a second and is often described as sounding like a
+            rusty gate.
           </p>
           <p>
-            Both sexes utter a harsh, chattering rattle—sometimes in flight—to
-            signal alarm or maintain contact, or when mobbing or scolding. They
-            also give a sharp one-note call.
+            Males and females make a very short, harsh chaa or chitip call when
+            alarmed, taking flight, or approaching other grackles. Males make a
+            distinctive, short, nasal call while perching in a nesting colony.
           </p>
         </Modal.Body>
         <Modal.Footer>

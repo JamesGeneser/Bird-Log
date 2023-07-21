@@ -1,12 +1,11 @@
 import React from "react";
 import { Card, Image } from "react-bootstrap";
 import { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function BullocksOriole() {
+export default function EuropeanStarling() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -18,39 +17,15 @@ export default function BullocksOriole() {
   const handleShowDescription = () => setShowDescription(true);
   const handleShowCall = () => setShowCall(true);
 
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-
   return (
     <>
       <Card className="card m-2">
         <Card.Header className="bird-name bg-none">
-          Bullock's Oriole
+          European Starling
         </Card.Header>
-
-        <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-          <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/bullocksOrioleM.jpeg")}
-            />
-            <Carousel.Caption className="caption">
-              <h3 className="bird-sex">male</h3>
-              {/* <p className="small-bird-title">Brewer's Blackbird</p> */}
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/bullocksOrioleF.jpeg")}
-            />
-            <Carousel.Caption className="caption">
-              <h3 className="bird-sex">female</h3>
-              {/* <p className="small-title">Brewer's Blackbird</p> */}
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+        <Card.Img
+          src={require("../media/images/birds/europeanStarling.jpeg")}
+        />
 
         <Card.Footer className="button-row ">
           <Row className="">
@@ -92,7 +67,7 @@ export default function BullocksOriole() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/bullocksOrioleMap.jpg")}
+            src={require("../media/images/maps/europeanStarlingMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -111,15 +86,15 @@ export default function BullocksOriole() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Nimble canopy-gleaners of open woodlands in the western U.S.,
-            Bullock's Orioles dangle upside down from branches while foraging
-            and weaving their remarkable hanging nests. Adult males are
-            flame-orange with a neat line through the eye and a white wing
-            patch; females are washed in gray and orange. In addition to
-            insects, they eat fruit and nectar—a trait some bird watchers
-            capitalize on by offering nectar, jelly, and orange halves in summer
-            backyards. Listen for their whistling, chuckling song in tall trees
-            along rivers and streams.
+            First brought to North America by Shakespeare enthusiasts in the
+            nineteenth century, European Starlings are now among the continent’s
+            most numerous songbirds. They are stocky black birds with short
+            tails, triangular wings, and long, pointed bills. Though they’re
+            sometimes resented for their abundance and aggressiveness, they’re
+            still dazzling birds when you get a good look. Covered in white
+            spots during winter, they turn dark and glossy in summer. For much
+            of the year, they wheel through the sky and mob lawns in big, noisy
+            flocks.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -134,23 +109,35 @@ export default function BullocksOriole() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/402715/embed"
+            className="cornel-bird-call"
+            src="https://macaulaylibrary.org/asset/482880/embed"
             width={250}
             height={300}
           ></iframe>
           <p>
-            Bullock's Oriole songs are about 3 seconds long, composed of rich
-            whistled notes interspersed with rattles, often introduced by gruff
-            scratchy notes. The timbre is reminiscent of a child's squeaky-toy.
-            The male's and female's songs are similar in rhythm, pitch, and
-            quality, but the female's final notes are harsher. Females may sing
-            repeatedly from the ground; males usually sing only in trees, often
-            from an inconspicuous perch.
+            Starlings are relatives of the mynah birds, and like them they have
+            impressive vocal abilities and a gift for mimicry. They can warble,
+            whistle, chatter, make smooth liquid sounds, harsh trills and
+            rattles, and imitate meadowlarks, jays, and hawks. The songs tend to
+            consist of either loud whistles or softer, jumbled warbling.
+            Whistled songs are a few seconds long, often used between males.
+            Warbled songs can go on for more than a minute, and seem mainly
+            directed at females. Males sing several varieties of each of these
+            two classes of songs. Females also sing, particularly in the fall.
+            Songs often include imitations of other birds, including Eastern
+            Wood-Pewee, Killdeer, meadowlarks, Northern Bobwhite, Brown-headed
+            Cowbird, Northern Flicker, and others.
           </p>
           <p>
-            Both sexes utter a harsh, chattering rattle—sometimes in flight—to
-            signal alarm or maintain contact, or when mobbing or scolding. They
-            also give a sharp one-note call.
+            Male and female starlings use about 10 kinds of calls to communicate
+            about where they are, whether there’s danger around, and how
+            aggressive or agitated they feel. Among these are a purr-like call
+            given as the bird takes flight, and a rattle that starlings make as
+            they join a flock on the ground. Two types of screamlike calls
+            indicate aggression and are often accompanied by flapping wings: one
+            is a chattering call (described as chackerchackerchacker); the other
+            is a high-pitched trill. Starlings also make metallic chip notes to
+            other flock members and when harassing or mobbing predators.
           </p>
         </Modal.Body>
         <Modal.Footer>

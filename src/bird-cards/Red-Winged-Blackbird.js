@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function BullocksOriole() {
+export default function RedWingedBb() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -28,13 +28,13 @@ export default function BullocksOriole() {
     <>
       <Card className="card m-2">
         <Card.Header className="bird-name bg-none">
-          Bullock's Oriole
+          Red-Winged Black Bird
         </Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/bullocksOrioleM.jpeg")}
+              src={require("../media/images/birds/redwingedBBM.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
@@ -43,7 +43,7 @@ export default function BullocksOriole() {
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/bullocksOrioleF.jpeg")}
+              src={require("../media/images/birds/redwingedBBF.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
@@ -92,7 +92,7 @@ export default function BullocksOriole() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/bullocksOrioleMap.jpg")}
+            src={require("../media/images/maps/redWingedBbMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -111,15 +111,14 @@ export default function BullocksOriole() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Nimble canopy-gleaners of open woodlands in the western U.S.,
-            Bullock's Orioles dangle upside down from branches while foraging
-            and weaving their remarkable hanging nests. Adult males are
-            flame-orange with a neat line through the eye and a white wing
-            patch; females are washed in gray and orange. In addition to
-            insects, they eat fruit and nectar—a trait some bird watchers
-            capitalize on by offering nectar, jelly, and orange halves in summer
-            backyards. Listen for their whistling, chuckling song in tall trees
-            along rivers and streams.
+            One of the most abundant birds across North America, and one of the
+            most boldly colored, the Red-winged Blackbird is a familiar sight
+            atop cattails, along soggy roadsides, and on telephone wires.
+            Glossy-black males have scarlet-and-yellow shoulder patches they can
+            puff up or hide depending on how confident they feel. Females are a
+            subdued, streaky brown, almost like a large, dark sparrow. Their
+            early and tumbling song are happy indications of the return of
+            spring.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -134,23 +133,25 @@ export default function BullocksOriole() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/402715/embed"
+            src="https://macaulaylibrary.org/asset/420022/embed"
             width={250}
             height={300}
           ></iframe>
           <p>
-            Bullock's Oriole songs are about 3 seconds long, composed of rich
-            whistled notes interspersed with rattles, often introduced by gruff
-            scratchy notes. The timbre is reminiscent of a child's squeaky-toy.
-            The male's and female's songs are similar in rhythm, pitch, and
-            quality, but the female's final notes are harsher. Females may sing
-            repeatedly from the ground; males usually sing only in trees, often
-            from an inconspicuous perch.
+            The male Red-winged Blackbird’s conk-la-ree! is a classic sound of
+            wetlands across the continent. The 1-second song starts with an
+            abrupt note that turns into a musical trill. Males often sing from a
+            high perch while leaning forward, drooping their wings, spreading
+            their tail feathers, and fluffing their bright shoulder patches to
+            show them off. Females give a very different song in response to a
+            singing male, a series of three to five short chit or check notes.
           </p>
           <p>
-            Both sexes utter a harsh, chattering rattle—sometimes in flight—to
-            signal alarm or maintain contact, or when mobbing or scolding. They
-            also give a sharp one-note call.
+            The typical call of a Red-winged Blackbird is a distinctive,
+            matter-of-fact check that’s fairly easy to recognize. Males and
+            females make these calls all year round, in flight and while
+            feeding, when confronting rivals and to raise an alarm. They also
+            give a more intense alarm call, a fast, scolding chak chak chak.
           </p>
         </Modal.Body>
         <Modal.Footer>
