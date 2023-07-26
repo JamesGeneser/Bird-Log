@@ -1,18 +1,46 @@
 {
   "files": {
-    "main.css": "/Bird-Log/static/css/main.63ddde3b.css",
-    "main.js": "/Bird-Log/static/js/main.4f628c7e.js",
+    "main.css": "/Bird-Log/static/css/main.059be148.css",
+    "main.js": "/Bird-Log/static/js/main.b45b41cb.js",
+    "static/media/commonGrackleM.jpeg": "/Bird-Log/static/media/commonGrackleM.058df3bc5ee22ad56f53.jpeg",
+    "static/media/blueGrosbeakM.jpeg": "/Bird-Log/static/media/blueGrosbeakM.acd17c6a99343f9adb65.jpeg",
+    "static/media/nFlickerYellowM.jpeg": "/Bird-Log/static/media/nFlickerYellowM.4247ccd9a17dc795e505.jpeg",
+    "static/media/nflickerRedF.jpeg": "/Bird-Log/static/media/nflickerRedF.26276c4726bc3595a98f.jpeg",
+    "static/media/houseFinchM.jpeg": "/Bird-Log/static/media/houseFinchM.ce0d707e99e4ba540db9.jpeg",
+    "static/media/europeanStarlingMap.jpg": "/Bird-Log/static/media/europeanStarlingMap.ced594f5dda93154b6ea.jpg",
+    "static/media/bullocksOrioleM.jpeg": "/Bird-Log/static/media/bullocksOrioleM.551054cdf978d37c0449.jpeg",
+    "static/media/houseFinchF.jpeg": "/Bird-Log/static/media/houseFinchF.d95776dfb48ebd4e943b.jpeg",
+    "static/media/redWingedBbMap.jpg": "/Bird-Log/static/media/redWingedBbMap.d160129fa9c1b250c97d.jpg",
+    "static/media/europeanStarling.jpeg": "/Bird-Log/static/media/europeanStarling.5c98978e9ed2f6d4502e.jpeg",
+    "static/media/redwingedBBF.jpeg": "/Bird-Log/static/media/redwingedBBF.f57c00010189aceae724.jpeg",
+    "static/media/brownHeadedCowbirdMap.jpg": "/Bird-Log/static/media/brownHeadedCowbirdMap.6b09600a757339eb9eb9.jpg",
+    "static/media/commonGrackleF.jpeg": "/Bird-Log/static/media/commonGrackleF.86e14c5a08a371e22b17.jpeg",
     "static/media/brewersBlackBirdFemale.jpeg": "/Bird-Log/static/media/brewersBlackBirdFemale.60a2993c733401296963.jpeg",
     "static/media/brewersBlackbirdMap.jpeg": "/Bird-Log/static/media/brewersBlackbirdMap.a29d3db7bf06fd6ef3bd.jpeg",
     "static/media/americanCrow.jpeg": "/Bird-Log/static/media/americanCrow.f3f8a3ab9cd2fa488d0f.jpeg",
+    "static/media/commonGrackleMap.jpg": "/Bird-Log/static/media/commonGrackleMap.c3294d028920fa9f61fd.jpg",
+    "static/media/blueGrosbeakF.jpeg": "/Bird-Log/static/media/blueGrosbeakF.8b14e4431acf3d6df17b.jpeg",
+    "static/media/brownHeadedCowbirdM.jpeg": "/Bird-Log/static/media/brownHeadedCowbirdM.bf3fe9c5cbb6a7aabb0a.jpeg",
+    "static/media/blueGrosbeakMap.jpg": "/Bird-Log/static/media/blueGrosbeakMap.3ae9c151c42fd6f6ba15.jpg",
+    "static/media/yellowHeadedBlackBirdF.jpeg": "/Bird-Log/static/media/yellowHeadedBlackBirdF.6991dd574839e23703bb.jpeg",
+    "static/media/yellowHeadedBlackbirdM.jpeg": "/Bird-Log/static/media/yellowHeadedBlackbirdM.a0bf3badb373b585dc22.jpeg",
+    "static/media/nFlickerRedM.jpeg": "/Bird-Log/static/media/nFlickerRedM.cc3cb5ec866ea51d41d1.jpeg",
     "static/media/americanCrowMap.jpeg": "/Bird-Log/static/media/americanCrowMap.a4369ddcdf226b879f2e.jpeg",
+    "static/media/bullocksOrioleMap.jpg": "/Bird-Log/static/media/bullocksOrioleMap.5c0179354380137fb222.jpg",
+    "static/media/redwingedBBM.jpeg": "/Bird-Log/static/media/redwingedBBM.b5bc0a57e31aeba96a4b.jpeg",
+    "static/media/brewersBlackBirdMale.jpeg": "/Bird-Log/static/media/brewersBlackBirdMale.79e55a37a05bb1ba68bb.jpeg",
+    "static/media/bullocksOrioleF.jpeg": "/Bird-Log/static/media/bullocksOrioleF.cdeb9757954518060145.jpeg",
+    "static/media/brownHeadedCowbirdF.jpeg": "/Bird-Log/static/media/brownHeadedCowbirdF.cbe45d2c8b385ea9e892.jpeg",
+    "static/media/nFlickerYellowF.jpeg": "/Bird-Log/static/media/nFlickerYellowF.0104a19ab046a6972960.jpeg",
+    "static/media/houseFinchMap.jpg": "/Bird-Log/static/media/houseFinchMap.af1b02644ecdb92fa1ac.jpg",
+    "static/media/yellowHeadedBbMap.jpg": "/Bird-Log/static/media/yellowHeadedBbMap.6952abfaaa63765a3c77.jpg",
     "static/media/birdMapKey.png": "/Bird-Log/static/media/birdMapKey.11d74786b165cbd11ffb.png",
     "index.html": "/Bird-Log/index.html",
-    "main.63ddde3b.css.map": "/Bird-Log/static/css/main.63ddde3b.css.map",
-    "main.4f628c7e.js.map": "/Bird-Log/static/js/main.4f628c7e.js.map"
+    "main.059be148.css.map": "/Bird-Log/static/css/main.059be148.css.map",
+    "main.b45b41cb.js.map": "/Bird-Log/static/js/main.b45b41cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.63ddde3b.css",
-    "static/js/main.4f628c7e.js"
+    "static/css/main.059be148.css",
+    "static/js/main.b45b41cb.js"
   ]
 }
