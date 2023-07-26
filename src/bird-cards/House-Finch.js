@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function YellowHeadedBlackbird() {
+export default function HouseFinch() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -27,24 +27,18 @@ export default function YellowHeadedBlackbird() {
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">
-          Red-Winged Black Bird
-        </Card.Header>
+        <Card.Header className="bird-name bg-none">House Finch</Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/yellowHeadedBlackbirdM.jpeg")}
-            />
+            <Card.Img src={require("../media/images/birds/houseFinchM.jpeg")} />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
               {/* <p className="small-bird-title">Brewer's Blackbird</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/yellowHeadedBlackBirdF.jpeg")}
-            />
+            <Card.Img src={require("../media/images/birds/houseFinchF.jpeg")} />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
               {/* <p className="small-title">Brewer's Blackbird</p> */}
@@ -92,7 +86,7 @@ export default function YellowHeadedBlackbird() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/yellowHeadedBbMap.jpg")}
+            src={require("../media/images/maps/houseFinchMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -111,13 +105,14 @@ export default function YellowHeadedBlackbird() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            With a golden head, a white patch on black wings, and a call that
-            sounds like a rusty farm gate opening, the Yellow-headed Blackbird
-            demands your attention. Look for them in western and prairie
-            wetlands, where they nest in reeds directly over the water. They’re
-            just as impressive in winter, when huge flocks seem to roll across
-            farm fields. Each bird gleans seeds from the ground, then leapfrogs
-            over its flock mates to the front edge of the ever-advancing troupe.
+            The House Finch is a recent introduction from western into eastern
+            North America (and Hawaii), but it has received a warmer reception
+            than other arrivals like the European Starling and House Sparrow.
+            That’s partly due to the cheerful red head and breast of males, and
+            to the bird’s long, twittering song, which can now be heard in most
+            of the neighborhoods of the continent. If you haven’t seen one
+            recently, chances are you can find one at the next bird feeder you
+            come across.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -132,22 +127,23 @@ export default function YellowHeadedBlackbird() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/404419/embed"
+            src="https://macaulaylibrary.org/asset/221597711/embed"
             width={250}
             height={300}
           ></iframe>
           <p>
-            Males sing a few musical notes followed by a screeching buzz, rather
-            like a heavy door swinging on a very rusty metal hinge. They sing
-            from cattails, bulrushes, fences, shrubs, or small trees in the
-            morning and evening during the breeding season. Females make a
-            chattering sound that may be considered a song.
+            Male House Finches sing a long, jumbled warbling composed of short
+            notes. The song often ends with an upward or downward slur, and
+            lasts about 3 seconds. Males may sing throughout the year. Females
+            sometimes give a shorter, simpler version of the song. Compared with
+            Cassin’s and Purple finches, House Finch songs sound slower,
+            rougher, and somewhat less fluid. The final slurred note is more
+            often heard in House Finches than in the other two species.
           </p>
           <p>
-            Their calls include frequent check calls used in many situations
-            during the breeding season, screams given by alarmed females, growls
-            given by fighting or mating males, and harsh rattles given by males
-            when predators are about.
+            Male and female House Finch calls are a sharp cheep made often,
+            including while perched and during flight. You may hear a sharper
+            version of this call as the birds flush from the ground.
           </p>
         </Modal.Body>
         <Modal.Footer>

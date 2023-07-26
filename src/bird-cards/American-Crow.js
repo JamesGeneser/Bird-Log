@@ -34,9 +34,10 @@ export default function AmericanCrow() {
                 Range Map
               </Button>
             </Col>
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
-                className="button "
+                className="button 
+                "
                 variant="secondary"
                 onClick={handleShowDescription}
               >
@@ -45,7 +46,7 @@ export default function AmericanCrow() {
             </Col>
             <Col xs={4} lg={4} className="text-center">
               <Button
-                className="button"
+                className="button "
                 variant="secondary"
                 onClick={handleShowCall}
               >

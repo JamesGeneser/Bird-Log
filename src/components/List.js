@@ -1,8 +1,8 @@
 import React from "react";
 
 import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import AmericanCrow from "../bird-cards/American-Crow";
 import BrewersBlackbird from "../bird-cards/Brewers-Blackbird";
 import BlueGrosbeak from "../bird-cards/Blue-Grosbeak";
@@ -12,6 +12,9 @@ import BullocksOriole from "../bird-cards/Bullocks-Oriole";
 import CommonGrackle from "../bird-cards/Common-Grackle";
 import RedWingedBb from "../bird-cards/Red-Winged-Blackbird";
 import EuropeanStarling from "../bird-cards/European-Starling";
+import YellowHeadedBlackbird from "../bird-cards/Yellow-Headed-Blackbird";
+import NorthernFlicker from "../bird-cards/Northern-Flicker";
+import HouseFinch from "../bird-cards/House-Finch";
 // import Carousel from "react-bootstrap/Carousel";
 
 export default function List() {
@@ -23,13 +26,28 @@ export default function List() {
   return (
     <>
       <Container className="p-0 d-flex flex-column justify-content-center">
-        <AmericanCrow /> <BrewersBlackbird />
+        <Row>
+          <Col xs={12} lg={4} className="p-0">
+            <AmericanCrow />{" "}
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <BrewersBlackbird />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <BlueGrosbeak />
+          </Col>
+        </Row>
+        <AmericanCrow />
+        <BrewersBlackbird />
         <BlueGrosbeak />
         <BrownHeadedCowbird />
         <BullocksOriole />
         <CommonGrackle />
         <RedWingedBb />
         <EuropeanStarling />
+        <YellowHeadedBlackbird />
+        <NorthernFlicker />
+        <HouseFinch />
         {/* <Row className="section-title-row">
           <h2 className="section-title m-1 text-end">Black Birds</h2>
         </Row> */}

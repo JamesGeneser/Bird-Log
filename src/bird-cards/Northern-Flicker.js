@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function YellowHeadedBlackbird() {
+export default function NorthernFlicker() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -28,26 +28,45 @@ export default function YellowHeadedBlackbird() {
     <>
       <Card className="card m-2">
         <Card.Header className="bird-name bg-none">
-          Red-Winged Black Bird
+          Northern Flicker
         </Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/yellowHeadedBlackbirdM.jpeg")}
+              src={require("../media/images/birds/nFlickerRedM.jpeg")}
             />
             <Carousel.Caption className="caption">
-              <h3 className="bird-sex">male</h3>
-              {/* <p className="small-bird-title">Brewer's Blackbird</p> */}
+              <h3 className="bird-sex">male </h3>
+              <p>red-shafted</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/yellowHeadedBlackBirdF.jpeg")}
+              src={require("../media/images/birds/nflickerRedF.jpeg")}
             />
             <Carousel.Caption className="caption">
-              <h3 className="bird-sex">female</h3>
-              {/* <p className="small-title">Brewer's Blackbird</p> */}
+              <h3 className="bird-sex">female </h3>
+              <p>red-shafted</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item interval={null}>
+            <Card.Img
+              src={require("../media/images/birds/nFlickerYellowM.jpeg")}
+            />
+            <Carousel.Caption className="caption">
+              <h3 className="bird-sex">male </h3>
+              <p>yellow-shafted</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={null}>
+            <Card.Img
+              src={require("../media/images/birds/nFlickerYellowF.jpeg")}
+            />
+            <Carousel.Caption className="caption">
+              <h3 className="bird-sex">female </h3>
+              <p>yellow-shafted</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -92,7 +111,7 @@ export default function YellowHeadedBlackbird() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/yellowHeadedBbMap.jpg")}
+            src={require("../media/images/maps/redWingedBbMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -111,13 +130,14 @@ export default function YellowHeadedBlackbird() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            With a golden head, a white patch on black wings, and a call that
-            sounds like a rusty farm gate opening, the Yellow-headed Blackbird
-            demands your attention. Look for them in western and prairie
-            wetlands, where they nest in reeds directly over the water. They’re
-            just as impressive in winter, when huge flocks seem to roll across
-            farm fields. Each bird gleans seeds from the ground, then leapfrogs
-            over its flock mates to the front edge of the ever-advancing troupe.
+            Northern Flickers are large, brown woodpeckers with a gentle
+            expression and handsome black-scalloped plumage. On walks, don’t be
+            surprised if you scare one up from the ground. It’s not where you’d
+            expect to find a woodpecker, but flickers eat mainly ants and
+            beetles, digging for them with their unusual, slightly curved bill.
+            When they fly you’ll see a flash of color in the wings – yellow if
+            you’re in the East, red if you’re in the West – and a bright white
+            flash on the rump.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -132,22 +152,21 @@ export default function YellowHeadedBlackbird() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/404419/embed"
+            src="https://macaulaylibrary.org/asset/460089/embed"
             width={250}
             height={300}
           ></iframe>
           <p>
-            Males sing a few musical notes followed by a screeching buzz, rather
-            like a heavy door swinging on a very rusty metal hinge. They sing
-            from cattails, bulrushes, fences, shrubs, or small trees in the
-            morning and evening during the breeding season. Females make a
-            chattering sound that may be considered a song.
+            Northern Flickers make a loud, rolling rattle with a piercing tone
+            that rises and falls in volume several times. The song lasts 7 or 8
+            seconds and is quite similar to the call of the Pileated Woodpecker.
+            You’ll hear it in the spring and early summer, while pairs are
+            forming and birds are establishing their territories.
           </p>
           <p>
-            Their calls include frequent check calls used in many situations
-            during the breeding season, screams given by alarmed females, growls
-            given by fighting or mating males, and harsh rattles given by males
-            when predators are about.
+            Flickers make a loud single-note call, often sounding like kyeer,
+            about a half-second long. When birds are close together and
+            displaying they may make a quiet, rhythmic wick-a, wick-a call.
           </p>
         </Modal.Body>
         <Modal.Footer>
