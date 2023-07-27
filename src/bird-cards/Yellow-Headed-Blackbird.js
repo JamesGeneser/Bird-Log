@@ -63,7 +63,7 @@ export default function YellowHeadedBlackbird() {
                 Range Map
               </Button>
             </Col>
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
                 className="button "
                 variant="secondary"

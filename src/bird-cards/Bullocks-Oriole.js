@@ -54,7 +54,7 @@ export default function BullocksOriole() {
 
         <Card.Footer className="button-row ">
           <Row className="">
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
                 className="button "
                 variant="secondary"

@@ -37,12 +37,18 @@ export default function List() {
             <BlueGrosbeak />
           </Col>
         </Row>
-        <AmericanCrow />
-        <BrewersBlackbird />
-        <BlueGrosbeak />
-        <BrownHeadedCowbird />
-        <BullocksOriole />
-        <CommonGrackle />
+        <Row>
+          <Col xs={12} lg={4} className="p-0">
+            <BrownHeadedCowbird />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <BullocksOriole />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <CommonGrackle />
+          </Col>
+        </Row>
+
         <RedWingedBb />
         <EuropeanStarling />
         <YellowHeadedBlackbird />

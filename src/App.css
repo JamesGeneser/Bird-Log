@@ -12,7 +12,7 @@ header{  background-color: rgb(223, 139, 14);}
   font-family: 'Roboto', sans-serif;
 background-color: #1f4c72, !important;
 color: white !important;
-font-size: 30px;
+font-size: 5vh;
 font-weight: 600;
 }
 
@@ -31,6 +31,11 @@ font-weight: 600;
 .bird-sex{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  font-size: 4vh;
+  text-shadow: -1px 1px 0 rgb(79, 79, 79),
+				  1px 1px 0 rgb(79, 79, 79),
+				 1px -1px 0 rgb(79, 79, 79),
+				-1px -1px 0 rgb(79, 79, 79);
 }
 
 .small-bird-title{
