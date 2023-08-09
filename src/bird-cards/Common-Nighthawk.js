@@ -1,12 +1,11 @@
 import React from "react";
 import { Card, Image } from "react-bootstrap";
 import { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function CommonGrackle() {
+export default function CommonNighthawk() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -18,35 +17,13 @@ export default function CommonGrackle() {
   const handleShowDescription = () => setShowDescription(true);
   const handleShowCall = () => setShowCall(true);
 
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">Common Grackle</Card.Header>
-
-        <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-          <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/commonGrackleM.jpeg")}
-            />
-            <Carousel.Caption className="caption">
-              <h3 className="bird-sex">male</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/commonGrackleF.jpeg")}
-            />
-            <Carousel.Caption className="caption">
-              <h3 className="bird-sex">female</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+        <Card.Header className="bird-name bg-none">
+          Common Nighthawk
+        </Card.Header>
+        <Card.Img src={require("../media/images/birds/commonNightHawk.jpeg")} />
 
         <Card.Footer className="button-row ">
           <Row className="">
@@ -61,7 +38,8 @@ export default function CommonGrackle() {
             </Col>
             <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
-                className="button "
+                className="button 
+                "
                 variant="secondary"
                 onClick={handleShowDescription}
               >
@@ -70,7 +48,7 @@ export default function CommonGrackle() {
             </Col>
             <Col xs={4} lg={4} className="text-center">
               <Button
-                className="button"
+                className="button "
                 variant="secondary"
                 onClick={handleShowCall}
               >
@@ -88,7 +66,7 @@ export default function CommonGrackle() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/commonGrackleMap.jpg")}
+            src={require("../media/images/maps/commonNightHawkMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -107,14 +85,14 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Common Grackles are blackbirds that look like they've been slightly
-            stretched. They're taller and longer tailed than a typical
-            blackbird, with a longer, more tapered bill and glossy-iridescent
-            bodies. Grackles walk around lawns and fields on their long legs or
-            gather in noisy groups high in trees, typically evergreens. They eat
-            many crops (notably corn) and nearly anything else as well,
-            including garbage. In flight their long tails trail behind them,
-            sometimes folded down the middle into a shallow V shape.
+            On warm summer evenings, Common Nighthawks roam the skies over
+            treetops, grasslands, and cities. Their sharp, electric peent call
+            is often the first clue they’re overhead. In the dim half-light,
+            these long-winged birds fly in graceful loops, flashing white
+            patches out past the bend of each wing as they chase insects. These
+            fairly common but declining birds make no nest. Their young are so
+            well camouflaged that they’re hard to find, and even the adults seem
+            to vanish as soon as they land.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -129,28 +107,26 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/440377/embed"
+            className="cornel-bird-call"
+            src="https://macaulaylibrary.org/asset/406857/embed"
             width={250}
             height={300}
           ></iframe>
           <p>
-            Common Grackles make a variety of squeaks, whistles, and croaks. The
-            typical song, made by both males and females, is a guttural
-            readle-eak accompanied by high-pitched, clear whistles. It lasts
-            just less than a second and is often described as sounding like a
-            rusty gate.
+            Common Nighthawks give a nasal peent or beer call while flying. When
+            defending a nest, the female gives a hissing or throaty cluck.
+            Courting males give a croaking auk auk auk call.
           </p>
+          <h4>Other Sounds</h4>
           <p>
-            Males and females make a very short, harsh chaa or chitip call when
-            alarmed, taking flight, or approaching other grackles. Males make a
-            distinctive, short, nasal call while perching in a nesting colony.
+            During the breeding season, the male makes a booming sound by
+            flexing his wings while diving, making air rush through his
+            primaries. He does this while diving at females during courtship,
+            and while diving at intruders (including humans). The male may clap
+            his wings when intruders approach the nest.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Image
-            className="img-fluid"
-            src={require("../images/birdMapKey.png")}
-          /> */}
           <Button variant="secondary" onClick={handleCloseCall}>
             Close
           </Button>

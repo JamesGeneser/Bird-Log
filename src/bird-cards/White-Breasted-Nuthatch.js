@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function CommonGrackle() {
+export default function WhiteBreastedNuthatch() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -27,23 +27,27 @@ export default function CommonGrackle() {
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">Common Grackle</Card.Header>
+        <Card.Header className="bird-name bg-none">
+          White-breasted Nuthatch
+        </Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/commonGrackleM.jpeg")}
+              src={require("../media/images/birds/whiteBNuthatchM.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
+              {/* <p className="small-bird-title">Brewer's Blackbird</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/commonGrackleF.jpeg")}
+              src={require("../media/images/birds/whiteBNuthatchF.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
+              {/* <p className="small-title">Brewer's Blackbird</p> */}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -88,7 +92,7 @@ export default function CommonGrackle() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/commonGrackleMap.jpg")}
+            src={require("../media/images/maps/whiteBNuthatchMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -107,14 +111,14 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Common Grackles are blackbirds that look like they've been slightly
-            stretched. They're taller and longer tailed than a typical
-            blackbird, with a longer, more tapered bill and glossy-iridescent
-            bodies. Grackles walk around lawns and fields on their long legs or
-            gather in noisy groups high in trees, typically evergreens. They eat
-            many crops (notably corn) and nearly anything else as well,
-            including garbage. In flight their long tails trail behind them,
-            sometimes folded down the middle into a shallow V shape.
+            A common feeder bird with clean black, gray, and white markings,
+            White-breasted Nuthatches are active, agile little birds with an
+            appetite for insects and large, meaty seeds. They get their common
+            name from their habit of jamming large nuts and acorns into tree
+            bark, then whacking them with their sharp bill to “hatch” out the
+            seed from the inside. White-breasted Nuthatches may be small but
+            their voices are loud, and often their insistent nasal yammering
+            will lead you right to them.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -129,28 +133,27 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/440377/embed"
+            src="https://macaulaylibrary.org/asset/441312/embed"
             width={250}
             height={300}
           ></iframe>
           <p>
-            Common Grackles make a variety of squeaks, whistles, and croaks. The
-            typical song, made by both males and females, is a guttural
-            readle-eak accompanied by high-pitched, clear whistles. It lasts
-            just less than a second and is often described as sounding like a
-            rusty gate.
+            Male White-breasted Nuthatches sing in late winter and spring, a
+            rapid, nasal, fairly low-pitched wha-wha-wha that lasts 2-3 seconds.
+            It’s made up of a half-dozen to a dozen nearly identical notes.
+            Males sing these songs at two rates, with the faster version packing
+            in twice as many notes in the same amount of time. The fast version
+            is thought to be the main one used for mate attraction.
           </p>
           <p>
-            Males and females make a very short, harsh chaa or chitip call when
-            alarmed, taking flight, or approaching other grackles. Males make a
-            distinctive, short, nasal call while perching in a nesting colony.
+            The White-breasted Nuthatch’s most common call is a loud, nasal yank
+            often repeated a few times in a row. Both sexes make this call, and
+            it often has a more trembling, almost bleating quality, than either
+            the bird’s song or the Red-breasted Nuthatch’s call. When looking
+            for food, males and females exchange a soft yink.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Image
-            className="img-fluid"
-            src={require("../images/birdMapKey.png")}
-          /> */}
           <Button variant="secondary" onClick={handleCloseCall}>
             Close
           </Button>

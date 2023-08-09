@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function CommonGrackle() {
+export default function FerruginousHawk() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -27,23 +27,25 @@ export default function CommonGrackle() {
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">Common Grackle</Card.Header>
+        <Card.Header className="bird-name bg-none">
+          Ferruginous Hawk
+        </Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/commonGrackleM.jpeg")}
+              src={require("../media/images/birds/ferruginousHawkLight.jpeg")}
             />
             <Carousel.Caption className="caption">
-              <h3 className="bird-sex">male</h3>
+              <h3 className="bird-sex">light morph</h3>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/commonGrackleF.jpeg")}
+              src={require("../media/images/birds/ferruginousHawkDark.jpeg")}
             />
             <Carousel.Caption className="caption">
-              <h3 className="bird-sex">female</h3>
+              <h3 className="bird-sex">dark morph</h3>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -88,7 +90,7 @@ export default function CommonGrackle() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/commonGrackleMap.jpg")}
+            src={require("../media/images/maps/ferruginousHawkMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -107,14 +109,14 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Common Grackles are blackbirds that look like they've been slightly
-            stretched. They're taller and longer tailed than a typical
-            blackbird, with a longer, more tapered bill and glossy-iridescent
-            bodies. Grackles walk around lawns and fields on their long legs or
-            gather in noisy groups high in trees, typically evergreens. They eat
-            many crops (notably corn) and nearly anything else as well,
-            including garbage. In flight their long tails trail behind them,
-            sometimes folded down the middle into a shallow V shape.
+            Found in prairies, deserts, and open range of the West, the regal
+            Ferruginous Hawk hunts from a lone tree, rock outcrop, or from high
+            in the sky. This largest of North American hawks really is regal—its
+            species name is regalis—with a unique gray head, rich, rusty
+            (ferruginous) shoulders and legs, and gleaming white underparts. A
+            rarer dark-morph is reddish-chocolate in color. Ferruginous Hawks
+            eat a diet of small mammals, sometimes standing above prairie dog or
+            ground squirrel burrows to wait for prey to emerge.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -129,28 +131,23 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/440377/embed"
+            src="https://macaulaylibrary.org/asset/250892251/embed"
             width={250}
             height={300}
           ></iframe>
+
           <p>
-            Common Grackles make a variety of squeaks, whistles, and croaks. The
-            typical song, made by both males and females, is a guttural
-            readle-eak accompanied by high-pitched, clear whistles. It lasts
-            just less than a second and is often described as sounding like a
-            rusty gate.
+            When alarmed, adults and fledglings give a scratchy scream
+            reminiscent of a Herring Gull’s call. Young nestlings give short
+            cheeps.
           </p>
+          <h3>Other Sounds</h3>
           <p>
-            Males and females make a very short, harsh chaa or chitip call when
-            alarmed, taking flight, or approaching other grackles. Males make a
-            distinctive, short, nasal call while perching in a nesting colony.
+            Ferruginous Hawks make a loud whooshing sound when diving, for
+            example when defending their nests.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Image
-            className="img-fluid"
-            src={require("../images/birdMapKey.png")}
-          /> */}
           <Button variant="secondary" onClick={handleCloseCall}>
             Close
           </Button>

@@ -15,7 +15,21 @@ import EuropeanStarling from "../bird-cards/European-Starling";
 import YellowHeadedBlackbird from "../bird-cards/Yellow-Headed-Blackbird";
 import NorthernFlicker from "../bird-cards/Northern-Flicker";
 import HouseFinch from "../bird-cards/House-Finch";
-// import Carousel from "react-bootstrap/Carousel";
+import MourningDove from "../bird-cards/Mourning-Dove";
+import BlackCappedChickadee from "../bird-cards/Black-Capped-Chickadee";
+import WhiteBreastedNuthatch from "../bird-cards/White-Breasted-Nuthatch";
+import GreyVireo from "../bird-cards/Grey-Vireo";
+import BlackBilledMagpie from "../bird-cards/Black-Billed-Magpie";
+import HouseSparrow from "../bird-cards/House-Sparrow";
+import GoldFinch from "../bird-cards/Gold-Finch";
+import RedTailedHawk from "../bird-cards/Red-Tailed-Hawk";
+import AmericanKestrel from "../bird-cards/American-Kestrel";
+import BaldEagle from "../bird-cards/Bald-Eagle";
+import CommonNighthawk from "../bird-cards/Common-Nighthawk";
+import CoopersHawk from "../bird-cards/Coopers-Hawk";
+import BroadtailedHummingbird from "../bird-cards/Broad-Tailed-Hummingbird";
+import FerruginousHawk from "../bird-cards/Ferruginous-Hawk";
+import NorthernGoshawk from "../bird-cards/Northern-Goshawk";
 
 export default function List() {
   const [index, setIndex] = useState(0);
@@ -48,160 +62,76 @@ export default function List() {
             <CommonGrackle />
           </Col>
         </Row>
-
-        <RedWingedBb />
-        <EuropeanStarling />
-        <YellowHeadedBlackbird />
-        <NorthernFlicker />
-        <HouseFinch />
-        {/* <Row className="section-title-row">
-          <h2 className="section-title m-1 text-end">Black Birds</h2>
-        </Row> */}
-        {/* <Row className="m-1 ">
-          <Col className="m-1 p-0">
-            <h2 className="bird-name m-0 p-3">American Crow</h2>{" "}
-            <Carousel
-              activeIndex={index}
-              onSelect={handleSelect}
-              interval={null}
-            >
-              <Carousel.Item interval={null}>
-                <img
-                  className="d-block w-100 carousel-image"
-                  src={require("./images/americanCrow.jpeg")}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item interval={null}>
-                <img
-                  className="d-block w-100 carousel-image "
-                  data-bs-interval="false"
-                  src={require("./images/americanCrowMap.jpeg")}
-                  alt="Second slide"
-                />
-
-                <Carousel.Caption>
-                  <img
-                    className="map-key m-3"
-                    src={require("./images/birdMapKey.png")}
-                  />
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div className="crow-background">
-                  <p className="bird-description p-2">
-                    {" "}
-                    American Crows are familiar over much of the continent:
-                    large, intelligent, all-black birds with hoarse, cawing
-                    voices. They are common sights in treetops, fields, and
-                    roadsides, and in habitats ranging from open woods and empty
-                    beaches to town centers. They usually feed on the ground and
-                    eat almost anything—typically earthworms, insects and other
-                    small animals, seeds, and fruit; also garbage, carrion, and
-                    chicks they rob from nests. Their flight style is unique, a
-                    patient, methodical flapping that is rarely broken up with
-                    glides.
-                  </p>
-                </div>
-              </Carousel.Item>
-            </Carousel>
+        <Row>
+          <Col xs={12} lg={4} className="p-0">
+            <RedWingedBb />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <EuropeanStarling />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <YellowHeadedBlackbird />
           </Col>
         </Row>
-        <Row className="m-1 ">
-          <Col className="m-1 p-0">
-            <h2 className="bird-name m-0 p-3">Brewer's Blackbird</h2>{" "}
-            <Carousel
-              activeIndex={index}
-              onSelect={handleSelect}
-              interval={null}
-            >
-              <Carousel.Item interval={null}>
-                <img
-                  className="d-block w-100 carousel-image"
-                  src={require("./images/brewersBlackBirdMale.jpeg")}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item interval={null}>
-                <img
-                  className="d-block w-100 carousel-image "
-                  data-bs-interval="false"
-                  src={require("./images/brewersBlackbirdMap.jpeg")}
-                  alt="Second slide"
-                />
-
-                <Carousel.Caption>
-                  <img
-                    className="map-key m-3"
-                    src={require("./images/birdMapKey.png")}
-                  />
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div className="crow-background">
-                  <p className="bird-description p-2">
-                    {" "}
-                    American Crows are familiar over much of the continent:
-                    large, intelligent, all-black birds with hoarse, cawing
-                    voices. They are common sights in treetops, fields, and
-                    roadsides, and in habitats ranging from open woods and empty
-                    beaches to town centers. They usually feed on the ground and
-                    eat almost anything—typically earthworms, insects and other
-                    small animals, seeds, and fruit; also garbage, carrion, and
-                    chicks they rob from nests. Their flight style is unique, a
-                    patient, methodical flapping that is rarely broken up with
-                    glides.
-                  </p>
-                </div>
-              </Carousel.Item>
-            </Carousel>
+        <Row>
+          <Col xs={12} lg={4} className="p-0">
+            <NorthernFlicker />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <HouseFinch />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <MourningDove />
           </Col>
         </Row>
-        <Row className="">
-          {" "}
-          <h2 className="bird-name m-0">Brewer's Blackbird</h2>
-          <img
-            src={require("./images/brewersBlackBirdMale.jpeg")}
-            className="bird-image p-0"
-          />
-          <p className="bird-description m-0">bird detailes lorem ipsum</p>
+        <Row>
+          <Col xs={12} lg={4} className="p-0">
+            <BlackCappedChickadee />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <WhiteBreastedNuthatch />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <GreyVireo />
+          </Col>
         </Row>
-        <Row className="">
-          {" "}
-          <h2 className="bird-name m-0">Brown-Headed Cow Bird</h2>
-          <img
-            src={require("./images/brownHeadedCowbirdM.jpeg")}
-            className="bird-image p-0"
-          />
-          <p className="bird-description m-0">bird detailes lorem ipsum</p>
+        <Row>
+          <Col xs={12} lg={4} className="p-0">
+            <BlackBilledMagpie />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <HouseSparrow />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <GoldFinch />
+          </Col>
         </Row>
-        <Row className="">
-          {" "}
-          <h2 className="bird-name m-0">European Starling</h2>
-          <img
-            src={require("./images/europeanStarling.jpeg")}
-            className="bird-image p-0"
-          />
-          <p className="bird-description m-0">bird detailes lorem ipsum</p>
+        <Row>
+          <Col xs={12} lg={4} className="p-0">
+            <RedTailedHawk />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <AmericanKestrel />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <BaldEagle />
+          </Col>
         </Row>
-        <Row className="">
-          {" "}
-          <h2 className="bird-name m-0">Bullock's Oriole</h2>
-          <img
-            src={require("./images/bullocksOriole.jpeg")}
-            className="bird-image p-0"
-          />
-          <p className="bird-description m-0">bird detailes lorem ipsum</p>
+
+        <Row>
+          <Col xs={12} lg={4} className="p-0">
+            <CommonNighthawk />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <CoopersHawk />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <BroadtailedHummingbird />
+          </Col>
         </Row>
-        <Row className="">
-          {" "}
-          <h2 className="bird-name m-0">Common Grackle</h2>
-          <img
-            src={require("./images/commonGrackleM.jpeg")}
-            className="bird-image p-0"
-          />
-          <p className="bird-description m-0">bird detailes lorem ipsum</p>
-        </Row> */}
+
+        <FerruginousHawk />
+        <NorthernGoshawk />
       </Container>
     </>
   );

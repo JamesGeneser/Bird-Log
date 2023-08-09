@@ -1,12 +1,11 @@
 import React from "react";
 import { Card, Image } from "react-bootstrap";
 import { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function CommonGrackle() {
+export default function MourningDove() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -18,35 +17,11 @@ export default function CommonGrackle() {
   const handleShowDescription = () => setShowDescription(true);
   const handleShowCall = () => setShowCall(true);
 
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">Common Grackle</Card.Header>
-
-        <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-          <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/commonGrackleM.jpeg")}
-            />
-            <Carousel.Caption className="caption">
-              <h3 className="bird-sex">male</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/commonGrackleF.jpeg")}
-            />
-            <Carousel.Caption className="caption">
-              <h3 className="bird-sex">female</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+        <Card.Header className="bird-name bg-none">Mourning Dove</Card.Header>
+        <Card.Img src={require("../media/images/birds/mourningDove.jpeg")} />
 
         <Card.Footer className="button-row ">
           <Row className="">
@@ -61,7 +36,8 @@ export default function CommonGrackle() {
             </Col>
             <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
-                className="button "
+                className="button 
+                "
                 variant="secondary"
                 onClick={handleShowDescription}
               >
@@ -70,7 +46,7 @@ export default function CommonGrackle() {
             </Col>
             <Col xs={4} lg={4} className="text-center">
               <Button
-                className="button"
+                className="button "
                 variant="secondary"
                 onClick={handleShowCall}
               >
@@ -88,7 +64,7 @@ export default function CommonGrackle() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/commonGrackleMap.jpg")}
+            src={require("../media/images/maps/americanCrowMap.jpeg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -107,14 +83,12 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Common Grackles are blackbirds that look like they've been slightly
-            stretched. They're taller and longer tailed than a typical
-            blackbird, with a longer, more tapered bill and glossy-iridescent
-            bodies. Grackles walk around lawns and fields on their long legs or
-            gather in noisy groups high in trees, typically evergreens. They eat
-            many crops (notably corn) and nearly anything else as well,
-            including garbage. In flight their long tails trail behind them,
-            sometimes folded down the middle into a shallow V shape.
+            A graceful, slender-tailed, small-headed dove that’s common across
+            the continent. Mourning Doves perch on telephone wires and forage
+            for seeds on the ground; their flight is fast and bullet straight.
+            Their soft, drawn-out calls sound like laments. When taking off,
+            their wings make a sharp whistling or whinnying. Mourning Doves are
+            the most frequently hunted species in North America.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -129,28 +103,29 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/440377/embed"
+            className="cornel-bird-call"
+            src="https://macaulaylibrary.org/asset/479700/embed"
             width={250}
             height={300}
           ></iframe>
           <p>
-            Common Grackles make a variety of squeaks, whistles, and croaks. The
-            typical song, made by both males and females, is a guttural
-            readle-eak accompanied by high-pitched, clear whistles. It lasts
-            just less than a second and is often described as sounding like a
-            rusty gate.
+            The song (or “perch-coo”) is given mainly by unmated males from a
+            conspicuous perch. It’s a soft coo-oo followed by two or three
+            louder coos.
           </p>
           <p>
-            Males and females make a very short, harsh chaa or chitip call when
-            alarmed, taking flight, or approaching other grackles. Males make a
-            distinctive, short, nasal call while perching in a nesting colony.
+            You can often hear paired males give the three-parted “nest call”
+            while nest-building: a coo-OO-oo, highest in the middle. Females
+            sometimes call ohr ohr while sitting on the nest.
+          </p>
+          <p>
+            When taking off and landing, Mourning Doves’ wings make a loud
+            whistling that may help startle predators or warn flock mates. They
+            also can clap their wings together during takeoff much the way Rock
+            Pigeons do.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Image
-            className="img-fluid"
-            src={require("../images/birdMapKey.png")}
-          /> */}
           <Button variant="secondary" onClick={handleCloseCall}>
             Close
           </Button>

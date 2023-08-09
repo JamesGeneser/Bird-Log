@@ -34,14 +34,12 @@ export default function HouseFinch() {
             <Card.Img src={require("../media/images/birds/houseFinchM.jpeg")} />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
-              {/* <p className="small-bird-title">Brewer's Blackbird</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img src={require("../media/images/birds/houseFinchF.jpeg")} />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
-              {/* <p className="small-title">Brewer's Blackbird</p> */}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

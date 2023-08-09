@@ -28,7 +28,7 @@ export default function YellowHeadedBlackbird() {
     <>
       <Card className="card m-2">
         <Card.Header className="bird-name bg-none">
-          Red-Winged Black Bird
+          Yellow-Headed Black Bird
         </Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>

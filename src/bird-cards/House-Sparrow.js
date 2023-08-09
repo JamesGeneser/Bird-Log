@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function CommonGrackle() {
+export default function HouseSparrow() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -27,12 +27,12 @@ export default function CommonGrackle() {
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">Common Grackle</Card.Header>
+        <Card.Header className="bird-name bg-none">House Sparrow</Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/commonGrackleM.jpeg")}
+              src={require("../media/images/birds/houseSparrowM.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
@@ -40,7 +40,7 @@ export default function CommonGrackle() {
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/commonGrackleF.jpeg")}
+              src={require("../media/images/birds/houseSparrowF.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
@@ -50,7 +50,7 @@ export default function CommonGrackle() {
 
         <Card.Footer className="button-row ">
           <Row className="">
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
                 className="button "
                 variant="secondary"
@@ -88,7 +88,7 @@ export default function CommonGrackle() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/commonGrackleMap.jpg")}
+            src={require("../media/images/maps/houseSparrowMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -107,14 +107,14 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Common Grackles are blackbirds that look like they've been slightly
-            stretched. They're taller and longer tailed than a typical
-            blackbird, with a longer, more tapered bill and glossy-iridescent
-            bodies. Grackles walk around lawns and fields on their long legs or
-            gather in noisy groups high in trees, typically evergreens. They eat
-            many crops (notably corn) and nearly anything else as well,
-            including garbage. In flight their long tails trail behind them,
-            sometimes folded down the middle into a shallow V shape.
+            You can find House Sparrows most places where there are houses (or
+            other buildings), and few places where there aren’t. Along with two
+            other introduced species, the European Starling and the Rock Pigeon,
+            these are some of our most common birds. Their constant presence
+            outside our doors makes them easy to overlook, and their tendency to
+            displace native birds from nest boxes causes some people to resent
+            them. But House Sparrows, with their capacity to live so intimately
+            with us, are just beneficiaries of our own success.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -129,28 +129,25 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/440377/embed"
+            src="https://macaulaylibrary.org/asset/483872/embed"
             width={250}
             height={300}
           ></iframe>
           <p>
-            Common Grackles make a variety of squeaks, whistles, and croaks. The
-            typical song, made by both males and females, is a guttural
-            readle-eak accompanied by high-pitched, clear whistles. It lasts
-            just less than a second and is often described as sounding like a
-            rusty gate.
+            SONGS House Sparrows have a rather simple song of one or a series of
+            cheep or chirrup notes. It’s mainly given by males, who repeat it
+            incessantly during much of the year to announce that they possess a
+            nest and to attract females. Females only rarely use this song,
+            typically to attract a new mate after losing one.
           </p>
           <p>
-            Males and females make a very short, harsh chaa or chitip call when
-            alarmed, taking flight, or approaching other grackles. Males make a
-            distinctive, short, nasal call while perching in a nesting colony.
+            CALLS Male and female House Sparrows make single cheep notes to
+            indicate submissiveness in flocks, or between pairs as part of
+            courting or copulation. Females make a short chattering sound when
+            chasing off other females, or when her mate approaches.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Image
-            className="img-fluid"
-            src={require("../images/birdMapKey.png")}
-          /> */}
           <Button variant="secondary" onClick={handleCloseCall}>
             Close
           </Button>

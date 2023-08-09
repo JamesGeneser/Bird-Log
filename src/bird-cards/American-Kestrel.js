@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function CommonGrackle() {
+export default function AmericanKestrel() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -27,12 +27,14 @@ export default function CommonGrackle() {
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">Common Grackle</Card.Header>
+        <Card.Header className="bird-name bg-none">
+          American Kestrel
+        </Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/commonGrackleM.jpeg")}
+              src={require("../media/images/birds/americanKestrelM.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
@@ -40,7 +42,7 @@ export default function CommonGrackle() {
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/commonGrackleF.jpeg")}
+              src={require("../media/images/birds/americanKestrelF.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
@@ -107,14 +109,15 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Common Grackles are blackbirds that look like they've been slightly
-            stretched. They're taller and longer tailed than a typical
-            blackbird, with a longer, more tapered bill and glossy-iridescent
-            bodies. Grackles walk around lawns and fields on their long legs or
-            gather in noisy groups high in trees, typically evergreens. They eat
-            many crops (notably corn) and nearly anything else as well,
-            including garbage. In flight their long tails trail behind them,
-            sometimes folded down the middle into a shallow V shape.
+            North America’s littlest falcon, the American Kestrel packs a
+            predator’s fierce intensity into its small body. It's one of the
+            most colorful of all raptors: the male’s slate-blue head and wings
+            contrast elegantly with his rusty-red back and tail; the female has
+            the same warm reddish on her wings, back, and tail. Hunting for
+            insects and other small prey in open territory, kestrels perch on
+            wires or poles, or hover facing into the wind, flapping and
+            adjusting their long tails to stay in place. Kestrels are declining
+            in parts of their range; you can help them by putting up nest boxes.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -129,28 +132,22 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/440377/embed"
+            src="https://macaulaylibrary.org/asset/466023/embed"
             width={250}
             height={300}
           ></iframe>
+          <h4>Calls</h4>
           <p>
-            Common Grackles make a variety of squeaks, whistles, and croaks. The
-            typical song, made by both males and females, is a guttural
-            readle-eak accompanied by high-pitched, clear whistles. It lasts
-            just less than a second and is often described as sounding like a
-            rusty gate.
-          </p>
-          <p>
-            Males and females make a very short, harsh chaa or chitip call when
-            alarmed, taking flight, or approaching other grackles. Males make a
-            distinctive, short, nasal call while perching in a nesting colony.
+            American Kestrels have a fairly limited set of calls, but the most
+            common one is a loud, excited series of 3-6 klee! or killy! notes
+            lasting just over a second. It's distinctive and an excellent way to
+            find these birds. You may also hear two other common calls: a long
+            whine that can last 1–2 minutes, heard in birds that are courting or
+            feeding fledglings, and a fast chitter, usually used by both sexes
+            in friendly interactions.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Image
-            className="img-fluid"
-            src={require("../images/birdMapKey.png")}
-          /> */}
           <Button variant="secondary" onClick={handleCloseCall}>
             Close
           </Button>

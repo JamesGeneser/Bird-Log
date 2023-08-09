@@ -38,7 +38,6 @@ export default function BullocksOriole() {
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
-              {/* <p className="small-bird-title">Brewer's Blackbird</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={null}>
@@ -47,7 +46,6 @@ export default function BullocksOriole() {
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
-              {/* <p className="small-title">Brewer's Blackbird</p> */}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -63,7 +61,7 @@ export default function BullocksOriole() {
                 Range Map
               </Button>
             </Col>
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
                 className="button "
                 variant="secondary"

@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function CommonGrackle() {
+export default function BroadtailedHummingbird() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -27,12 +27,14 @@ export default function CommonGrackle() {
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">Common Grackle</Card.Header>
+        <Card.Header className="bird-name bg-none">
+          Broad-Tailed Hummingbird
+        </Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/commonGrackleM.jpeg")}
+              src={require("../media/images/birds/broadTailedHummingbirdM.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
@@ -40,7 +42,7 @@ export default function CommonGrackle() {
           </Carousel.Item>
           <Carousel.Item interval={null}>
             <Card.Img
-              src={require("../media/images/birds/commonGrackleF.jpeg")}
+              src={require("../media/images/birds/broadTailedHummingbirdF.jpeg")}
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
@@ -88,7 +90,7 @@ export default function CommonGrackle() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/commonGrackleMap.jpg")}
+            src={require("../media/images/maps/broadTailedHummingbirdMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -107,14 +109,15 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Common Grackles are blackbirds that look like they've been slightly
-            stretched. They're taller and longer tailed than a typical
-            blackbird, with a longer, more tapered bill and glossy-iridescent
-            bodies. Grackles walk around lawns and fields on their long legs or
-            gather in noisy groups high in trees, typically evergreens. They eat
-            many crops (notably corn) and nearly anything else as well,
-            including garbage. In flight their long tails trail behind them,
-            sometimes folded down the middle into a shallow V shape.
+            A jewel of high mountain meadows, male Broad-tailed Hummingbirds
+            fill the summer air with loud, metallic trills as they fly. They
+            breed at elevations up to 10,500 feet, where nighttime temperatures
+            regularly plunge below freezing. To make it through a cold night,
+            they slow their heart rate and drop their body temperature, entering
+            a state of torpor. As soon as the sun comes up, displaying males
+            show off their rose-magenta throats while performing spectacular
+            dives. After attracting a mate, females raise the young on their
+            own.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -129,28 +132,23 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/440377/embed"
+            src="https://macaulaylibrary.org/asset/448454/embed"
             width={250}
             height={300}
           ></iframe>
           <p>
-            Common Grackles make a variety of squeaks, whistles, and croaks. The
-            typical song, made by both males and females, is a guttural
-            readle-eak accompanied by high-pitched, clear whistles. It lasts
-            just less than a second and is often described as sounding like a
-            rusty gate.
+            Males and females chip and chitter when foraging, threatening
+            intruders, or during fights over nectar.
           </p>
+          <h3>Other Sounds</h3>
           <p>
-            Males and females make a very short, harsh chaa or chitip call when
-            alarmed, taking flight, or approaching other grackles. Males make a
-            distinctive, short, nasal call while perching in a nesting colony.
+            Male Broad-tailed Hummingbirds make an insectlike, metallic trill
+            with their wings while flying that can be quite loud. The trill has
+            a cricketlike quality to it and sounds like a cricket might sound if
+            it were zooming around in flight.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Image
-            className="img-fluid"
-            src={require("../images/birdMapKey.png")}
-          /> */}
           <Button variant="secondary" onClick={handleCloseCall}>
             Close
           </Button>

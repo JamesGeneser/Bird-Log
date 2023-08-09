@@ -1,12 +1,11 @@
 import React from "react";
 import { Card, Image } from "react-bootstrap";
 import { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function CommonGrackle() {
+export default function RedTailedHawk() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -18,35 +17,11 @@ export default function CommonGrackle() {
   const handleShowDescription = () => setShowDescription(true);
   const handleShowCall = () => setShowCall(true);
 
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">Common Grackle</Card.Header>
-
-        <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-          <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/commonGrackleM.jpeg")}
-            />
-            <Carousel.Caption className="caption">
-              <h3 className="bird-sex">male</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/commonGrackleF.jpeg")}
-            />
-            <Carousel.Caption className="caption">
-              <h3 className="bird-sex">female</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+        <Card.Header className="bird-name bg-none">Red-tailed Hawk</Card.Header>
+        <Card.Img src={require("../media/images/birds/redTailedHawk.jpeg")} />
 
         <Card.Footer className="button-row ">
           <Row className="">
@@ -61,7 +36,8 @@ export default function CommonGrackle() {
             </Col>
             <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
-                className="button "
+                className="button 
+                "
                 variant="secondary"
                 onClick={handleShowDescription}
               >
@@ -70,7 +46,7 @@ export default function CommonGrackle() {
             </Col>
             <Col xs={4} lg={4} className="text-center">
               <Button
-                className="button"
+                className="button "
                 variant="secondary"
                 onClick={handleShowCall}
               >
@@ -88,7 +64,7 @@ export default function CommonGrackle() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/commonGrackleMap.jpg")}
+            src={require("../media/images/maps/redTailedHawkMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -107,14 +83,13 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Common Grackles are blackbirds that look like they've been slightly
-            stretched. They're taller and longer tailed than a typical
-            blackbird, with a longer, more tapered bill and glossy-iridescent
-            bodies. Grackles walk around lawns and fields on their long legs or
-            gather in noisy groups high in trees, typically evergreens. They eat
-            many crops (notably corn) and nearly anything else as well,
-            including garbage. In flight their long tails trail behind them,
-            sometimes folded down the middle into a shallow V shape.
+            This is probably the most common hawk in North America. If you’ve
+            got sharp eyes you’ll see several individuals on almost any long car
+            ride, anywhere. Red-tailed Hawks soar above open fields, slowly
+            turning circles on their broad, rounded wings. Other times you’ll
+            see them atop telephone poles, eyes fixed on the ground to catch the
+            movements of a vole or a rabbit, or simply waiting out cold weather
+            before climbing a thermal updraft into the sky.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -129,28 +104,19 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/440377/embed"
+            className="cornel-bird-call"
+            src="https://macaulaylibrary.org/asset/241076151/embed"
             width={250}
             height={300}
           ></iframe>
+          <h4>Call</h4>
           <p>
-            Common Grackles make a variety of squeaks, whistles, and croaks. The
-            typical song, made by both males and females, is a guttural
-            readle-eak accompanied by high-pitched, clear whistles. It lasts
-            just less than a second and is often described as sounding like a
-            rusty gate.
-          </p>
-          <p>
-            Males and females make a very short, harsh chaa or chitip call when
-            alarmed, taking flight, or approaching other grackles. Males make a
-            distinctive, short, nasal call while perching in a nesting colony.
+            Adults make a hoarse, screaming kee-eeeee-arr. It lasts 2-3 seconds
+            and is usually given while soaring. During courtship, they also make
+            a shrill chwirk, sometimes giving several of these calls in a row.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Image
-            className="img-fluid"
-            src={require("../images/birdMapKey.png")}
-          /> */}
           <Button variant="secondary" onClick={handleCloseCall}>
             Close
           </Button>

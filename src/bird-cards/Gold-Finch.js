@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap";
 
-export default function CommonGrackle() {
+export default function GoldFinch() {
   const [showRange, setShowRange] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [showCall, setShowCall] = useState(false);
@@ -27,21 +27,17 @@ export default function CommonGrackle() {
   return (
     <>
       <Card className="card m-2">
-        <Card.Header className="bird-name bg-none">Common Grackle</Card.Header>
+        <Card.Header className="bird-name bg-none">Gold Finch</Card.Header>
 
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
           <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/commonGrackleM.jpeg")}
-            />
+            <Card.Img src={require("../media/images/birds/goldFinchM.jpeg")} />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={null}>
-            <Card.Img
-              src={require("../media/images/birds/commonGrackleF.jpeg")}
-            />
+            <Card.Img src={require("../media/images/birds/goldFinchF.jpeg")} />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
             </Carousel.Caption>
@@ -88,7 +84,7 @@ export default function CommonGrackle() {
         <Modal.Body>
           <Image
             className="img-fluid"
-            src={require("../media/images/maps/commonGrackleMap.jpg")}
+            src={require("../media/images/maps/goldFinchMap.jpg")}
           />
         </Modal.Body>
         <Modal.Footer>
@@ -107,14 +103,14 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Common Grackles are blackbirds that look like they've been slightly
-            stretched. They're taller and longer tailed than a typical
-            blackbird, with a longer, more tapered bill and glossy-iridescent
-            bodies. Grackles walk around lawns and fields on their long legs or
-            gather in noisy groups high in trees, typically evergreens. They eat
-            many crops (notably corn) and nearly anything else as well,
-            including garbage. In flight their long tails trail behind them,
-            sometimes folded down the middle into a shallow V shape.
+            This handsome little finch, the state bird of New Jersey, Iowa, and
+            Washington, is welcome and common at feeders, where it takes
+            primarily sunflower and nyjer. Goldfinches often flock with Pine
+            Siskins and Common Redpolls. Spring males are brilliant yellow and
+            shiny black with a bit of white. Females and all winter birds are
+            more dull but identifiable by their conical bill; pointed, notched
+            tail; wingbars; and lack of streaking. During molts they look
+            bizarrely patchy.
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -129,28 +125,31 @@ export default function CommonGrackle() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            src="https://macaulaylibrary.org/asset/440377/embed"
+            src="https://macaulaylibrary.org/asset/462535/embed"
             width={250}
             height={300}
           ></iframe>
+          <h4>Songs</h4>
           <p>
-            Common Grackles make a variety of squeaks, whistles, and croaks. The
-            typical song, made by both males and females, is a guttural
-            readle-eak accompanied by high-pitched, clear whistles. It lasts
-            just less than a second and is often described as sounding like a
-            rusty gate.
+            Males sing a long and variable series of twitters and warbles that
+            can be several seconds long. The notes and phrases are variable and
+            repeated in a seemingly random order. Birds continue to learn song
+            patterns throughout life.
           </p>
+          <h4>Calls</h4>
           <p>
-            Males and females make a very short, harsh chaa or chitip call when
-            alarmed, taking flight, or approaching other grackles. Males make a
-            distinctive, short, nasal call while perching in a nesting colony.
+            The American Goldfinch’s most common call is its contact call, often
+            given in flight. It sounds like the bird is quietly saying
+            po-ta-to-chip with a very even cadence. Birds sometimes give harsh
+            threat calls when in feeding flocks or at the nest. Males make a
+            tee-yee courtship call upon landing near a female in spring or early
+            summer, often followed by a burst of song. Females brooding
+            nestlings make a rapid sequence of high notes when they hear their
+            mate approaching with food. Birds at their nest make a loud,
+            two-parted bay-bee call if they feel threatened.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Image
-            className="img-fluid"
-            src={require("../images/birdMapKey.png")}
-          /> */}
           <Button variant="secondary" onClick={handleCloseCall}>
             Close
           </Button>
