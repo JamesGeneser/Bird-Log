@@ -38,7 +38,6 @@ export default function WhiteBreastedNuthatch() {
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">male</h3>
-              {/* <p className="small-bird-title">Brewer's Blackbird</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={null}>
@@ -47,14 +46,13 @@ export default function WhiteBreastedNuthatch() {
             />
             <Carousel.Caption className="caption">
               <h3 className="bird-sex">female</h3>
-              {/* <p className="small-title">Brewer's Blackbird</p> */}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
 
         <Card.Footer className="button-row ">
           <Row className="">
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
                 className="button "
                 variant="secondary"
@@ -72,7 +70,7 @@ export default function WhiteBreastedNuthatch() {
                 Basic Info
               </Button>
             </Col>
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
                 className="button"
                 variant="secondary"

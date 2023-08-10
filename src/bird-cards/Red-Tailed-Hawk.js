@@ -25,7 +25,7 @@ export default function RedTailedHawk() {
 
         <Card.Footer className="button-row ">
           <Row className="">
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
                 className="button "
                 variant="secondary"
@@ -44,7 +44,7 @@ export default function RedTailedHawk() {
                 Basic Info
               </Button>
             </Col>
-            <Col xs={4} lg={4} className="text-center">
+            <Col xs={4} lg={4} className="d-flex align-items-stretch">
               <Button
                 className="button "
                 variant="secondary"
