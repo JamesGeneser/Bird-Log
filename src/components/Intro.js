@@ -18,35 +18,36 @@ export default function Intro() {
           <Col>
             {" "}
             <Button
-              className="ms-3 mb-2 feather-button"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTarget"
+              className="mt-2 mb-2 feather-button"
               onClick={() => setOpen(!open)}
-              aria-controls="example-collapse-text"
-              aria-expanded={open}
+              aria-controls="collapseTarget"
+              aria-expanded={false}
             >
-              <Image src={featherSvg} />
+              <Image src={featherSvg} className={"feather-svg"} />
             </Button>
-            <Collapse in={open} dimension="width">
-              <div id="example-collapse-text " className="p-0 m-0">
-                <Card>
-                  <p>
-                    Birds of Colorado is a growing list. It was made to be used
-                    as an education or an identification resource.
-                  </p>
-                  <p>
-                    {" "}
-                    Every bird below can be found within Colorado, so browse and
-                    see if you can ID a familiar bird.
-                  </p>
-                  <p>
-                    {" "}
-                    Or study up on your bird calls to prepare for your next walk
-                    in the woods.
-                  </p>
-                </Card>
+            <Collapse in={open} id="collapseTarget">
+              <div id="collapseTarget" className="p-0 m-0">
+                <p>
+                  Birds of Colorado is a growing list. It was made to be used as
+                  an education or an identification resource.
+                </p>
+                <p>
+                  {" "}
+                  Every bird below can be found within Colorado, so browse and
+                  see if you can ID a familiar bird.
+                </p>
+                <p>
+                  {" "}
+                  Or study up on your bird calls to prepare for your next walk
+                  in the woods.
+                </p>
               </div>
             </Collapse>{" "}
           </Col>
-          <Col className="d-flex flex-row-reverse">
+          <Col className="d-flex flex-row-reverse m-3">
             {" "}
             <img
               className="cornellTag m-0"

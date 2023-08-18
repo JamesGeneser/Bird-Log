@@ -10,7 +10,7 @@ export default function Header() {
     <>
       <Container fluid className="d-flex flex-d intro">
         <Row>
-          <h1 className="title  mt-1 ms-1 pt-2">Birds of Colorado</h1>
+          <h1 className="title  mt-1 ms-1 mb-0 pt-2">Birds of Colorado</h1>
         </Row>
       </Container>
       <Container fluid className="intro">

@@ -2,7 +2,7 @@ header{  background-color: rgb(223, 139, 14);}
 
 .title{
   font-family: 'Poppins', sans-serif;
-  font-size: 8vh !important;
+  font-size: 18vh !important;
   font-weight: bold;
   background-color: #d76a03;
   color:white !important
@@ -14,17 +14,18 @@ header{  background-color: rgb(223, 139, 14);}
 }
 
 .citation{
-  font-size: 2vh;
+  font-size: 4vh;
 }
 .link{
   font-weight: bold !important;
+  font-size: 4vh;
 
 }
 .cornellTag{
   max-width: 25vw;
-  min-width: 17vw;
-  min-width: 5vh;
-  max-height: 3vh;
+  max-height: 18vh;
+
+
 }
 .intro{
   background-color: #d76a03;
@@ -34,10 +35,17 @@ header{  background-color: rgb(223, 139, 14);}
 .feather-button{
  border: white  !important;
   background-color: white  !important;
-  max-width: 8vh;
+  width: 6vw;
+  height: 18vh;
+  
 }
-.introText{
-  background-color: #7e8731;
+.feather-svg{
+  width: 3.5vw;
+}
+
+.intro-text{
+  background-color: white !important;
+  color:white !important
 }
 
 
@@ -105,6 +113,7 @@ font-weight: 600;
 
   }
   .cornellTag{
-    width: 17vw
+    height: 4vh;
+    width: 28vw
   }
 }
