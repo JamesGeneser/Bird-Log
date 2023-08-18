@@ -112,6 +112,23 @@ export default function AmericanCrow() {
             width={250}
             height={300}
           ></iframe>
+          <p>
+            Crows have more than 20 calls. The most common, a harsh caw, has
+            several qualities and lengths that may serve different purposes.
+            Immature begging young American Crows give a higher-pitched, nasal
+            call that can sound like a Fish Crow. You may also hear a variety of
+            calls and alert calls given to rally others to mob predators.
+          </p>
+          <h3>Songs</h3>
+          <p>
+            The American Crow is not known for the beauty of its song, a series
+            of loud caws. You may also hear crows making a “subsong”: a mixture
+            of hoarse or grating coos, caws, rattles, and clicks. These are
+            arranged in sequences that can be many minutes long, given quietly
+            and with a rambling, improvised quality.
+          </p>
+          <h3>Other Sounds</h3>
+          <p>Sometimes clacks its bill to make a single, sharp note.</p>
         </Modal.Body>
         <Modal.Footer>
           {/* <Image

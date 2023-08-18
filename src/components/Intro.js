@@ -21,32 +21,15 @@ export default function Intro() {
               type="button"
               data-toggle="collapse"
               data-target="#collapseTarget"
-              className="mt-2 mb-2 feather-button"
+              className="mt-2 mb-2 feather-button d-flex align-middle justify-content-center"
               onClick={() => setOpen(!open)}
               aria-controls="collapseTarget"
               aria-expanded={false}
             >
               <Image src={featherSvg} className={"feather-svg"} />
             </Button>
-            <Collapse in={open} id="collapseTarget">
-              <div id="collapseTarget" className="p-0 m-0">
-                <p>
-                  Birds of Colorado is a growing list. It was made to be used as
-                  an education or an identification resource.
-                </p>
-                <p>
-                  {" "}
-                  Every bird below can be found within Colorado, so browse and
-                  see if you can ID a familiar bird.
-                </p>
-                <p>
-                  {" "}
-                  Or study up on your bird calls to prepare for your next walk
-                  in the woods.
-                </p>
-              </div>
-            </Collapse>{" "}
           </Col>
+
           <Col className="d-flex flex-row-reverse m-3">
             {" "}
             <img
@@ -55,6 +38,28 @@ export default function Intro() {
             ></img>
           </Col>
         </Row>
+        <Collapse in={open} id="collapseTarget">
+          <div id="collapseTarget" className="p-0 m-0 ">
+            <Row className="intro-text">
+              {" "}
+              <p>
+                Birds of Colorado is a growing list. It was made to be used as
+                an education or an identification resource.
+              </p>
+              <p>
+                {" "}
+                The birds pictured below either live in or migrate through
+                Colorado. Browse through the list to see how many you can
+                recognize!
+              </p>
+              <p>
+                {" "}
+                Or study up on your bird calls to prepare for your next walk in
+                the woods.
+              </p>
+            </Row>
+          </div>
+        </Collapse>{" "}
       </Container>
     </div>
   );
