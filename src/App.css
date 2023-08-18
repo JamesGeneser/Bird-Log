@@ -2,7 +2,7 @@ header{  background-color: rgb(223, 139, 14);}
 
 .title{
   font-family: 'Poppins', sans-serif;
-  font-size: 60px !important;
+  font-size: 8vh !important;
   font-weight: bold;
   background-color: #d76a03;
   color:white !important
@@ -12,6 +12,7 @@ header{  background-color: rgb(223, 139, 14);}
   background-color: #d76a03;
   color:white
 }
+
 .citation{
   font-size: 2vh;
 }
@@ -22,7 +23,18 @@ header{  background-color: rgb(223, 139, 14);}
 .cornellTag{
   max-width: 25vh;
 }
+.intro{
+  background-color: #d76a03;
 
+}
+
+.feather-button{
+ border: white  !important;
+  background-color: white  !important;
+}
+.introText{
+  background-color: #7e8731;
+}
 
 
 .bird-name{
@@ -58,4 +70,37 @@ font-weight: 600;
 .small-bird-title{
   font-weight: 600;
 }
+@media all and (min-width: 431px) and (max-width: 701px) {
+  .title{
+    font-size: 6vh !important;
+  }
+  .citation{
+    font-size: 2vh !important;
+  }
+  
+  .link{
+    font-size: 2vh !important;
+  }
+  .cornellTag{
+    width: 20vw
+  }
+}
+@media all and (max-width: 430px) {
+  .title{
+    font-size: 4vh !important;
 
+  }
+
+  .citation{
+    font-size: 1vh !important;
+
+  }
+  
+  .link{
+    font-size: 1vh !important;
+    padding: 1vh;
+  }
+  .cornellTag{
+    width: 17vw
+  }
+}

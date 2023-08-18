@@ -4,19 +4,20 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Intro from "../components/Intro";
 
 export default function Header() {
   return (
     <>
       <Navbar className="navbar">
-        <Container className="">
-          <Navbar.Brand className="title p-0 ">Colorado Birds</Navbar.Brand>
+        <Container fluid>
+          <Navbar.Brand className="title p-0 ">Birds of Colorado</Navbar.Brand>
 
           <Row>
             <Col>
-              <p className="citation p-0 m-0">data and images from</p>
+              <p className="citation">data and images from</p>
               <Nav.Link
-                className="link"
+                className="link text-decoration-underline"
                 href="https://www.allaboutbirds.org/news/"
                 target="_blank"
               >
@@ -26,13 +27,14 @@ export default function Header() {
             <Col>
               {" "}
               <img
-                className="cornellTag p-0 m-0"
+                className="cornellTag"
                 src={require("../media/images/cornellLab.png")}
               ></img>
             </Col>
           </Row>
         </Container>
       </Navbar>
+      <Intro />
     </>
   );
 }
