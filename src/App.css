@@ -21,7 +21,10 @@ header{  background-color: rgb(223, 139, 14);}
 
 }
 .cornellTag{
-  max-width: 25vh;
+  max-width: 25vw;
+  min-width: 17vw;
+  min-width: 5vh;
+  max-height: 3vh;
 }
 .intro{
   background-color: #d76a03;
@@ -31,6 +34,7 @@ header{  background-color: rgb(223, 139, 14);}
 .feather-button{
  border: white  !important;
   background-color: white  !important;
+  max-width: 8vh;
 }
 .introText{
   background-color: #7e8731;
@@ -98,7 +102,7 @@ font-weight: 600;
   
   .link{
     font-size: 1vh !important;
-    padding: 1vh;
+
   }
   .cornellTag{
     width: 17vw
