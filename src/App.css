@@ -36,7 +36,7 @@ header{  background-color: rgb(223, 139, 14);}
  border: white  !important;
   background-color: white  !important;
   width: 6vw;
-  height: 10vh;
+  height: 15vh;
   
 }
 .feather-svg{
@@ -95,6 +95,9 @@ font-weight: 600;
   }
   .cornellTag{
     width: 20vw
+  }
+  .feather-button{
+    height: 12vh;
   }
 }
 @media all and (max-width: 430px) {

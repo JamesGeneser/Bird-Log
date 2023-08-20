@@ -43,19 +43,18 @@ export default function Intro() {
             <Row className="intro-text">
               {" "}
               <p>
-                Birds of Colorado is a growing list. It was made to be used as
-                an education or an identification resource.
+                🐔 Birds of Colorado is a growing list. It was made to be used
+                as an education 🎓, and identification 🔎 resource.
               </p>
               <p>
                 {" "}
-                The birds pictured below either live in or migrate through
-                Colorado. Browse through the list to see how many you can
-                recognize!
+                🐤 The birds below live in, or migrate through Colorado 🏔️.
+                Browse through the list to see how many you can recognize!
               </p>
               <p>
                 {" "}
-                Or study up on your bird calls to prepare for your next walk in
-                the woods.
+                🐦 Or study up on your bird calls 🎵 to prepare for your next
+                walk in the woods 🌳.
               </p>
             </Row>
           </div>
