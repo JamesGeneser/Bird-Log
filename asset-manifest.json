@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Colorado-Bird-Nerd/static/css/main.dd0ba1fe.css",
-    "main.js": "/Colorado-Bird-Nerd/static/js/main.5c7bf073.js",
+    "main.css": "/Colorado-Bird-Nerd/static/css/main.356f2c52.css",
+    "main.js": "/Colorado-Bird-Nerd/static/js/main.0b92a210.js",
     "static/media/commonGrackleM.jpeg": "/Colorado-Bird-Nerd/static/media/commonGrackleM.058df3bc5ee22ad56f53.jpeg",
     "static/media/northernGoshawk.jpeg": "/Colorado-Bird-Nerd/static/media/northernGoshawk.88e17a345738d4fee87b.jpeg",
     "static/media/blueGrosbeakM.jpeg": "/Colorado-Bird-Nerd/static/media/blueGrosbeakM.acd17c6a99343f9adb65.jpeg",
@@ -70,11 +70,11 @@
     "static/media/goldFinchM.jpeg": "/Colorado-Bird-Nerd/static/media/goldFinchM.a9484370357567303cb1.jpeg",
     "index.html": "/Colorado-Bird-Nerd/index.html",
     "static/media/feather.svg": "/Colorado-Bird-Nerd/static/media/feather.40412753ef861e7cc1dfb5e543328c12.svg",
-    "main.dd0ba1fe.css.map": "/Colorado-Bird-Nerd/static/css/main.dd0ba1fe.css.map",
-    "main.5c7bf073.js.map": "/Colorado-Bird-Nerd/static/js/main.5c7bf073.js.map"
+    "main.356f2c52.css.map": "/Colorado-Bird-Nerd/static/css/main.356f2c52.css.map",
+    "main.0b92a210.js.map": "/Colorado-Bird-Nerd/static/js/main.0b92a210.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd0ba1fe.css",
-    "static/js/main.5c7bf073.js"
+    "static/css/main.356f2c52.css",
+    "static/js/main.0b92a210.js"
   ]
 }
