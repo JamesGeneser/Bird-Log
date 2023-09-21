@@ -1,3 +1,5 @@
+/* header */
+
 header{  background-color: rgb(223, 139, 14);}
 
 .title{
@@ -21,6 +23,8 @@ header{  background-color: rgb(223, 139, 14);}
   font-size: 4vh;
 
 }
+
+/* introduction */
 .cornellTag{
   max-width: 25vw;
   max-height: 18vh;
@@ -36,8 +40,9 @@ header{  background-color: rgb(223, 139, 14);}
  border: white  !important;
   background-color: white  !important;
   width: 6vw;
-  height: 15vh;
-  
+  min-height: 9vh ;
+
+
 }
 .feather-svg{
   width: 3.5vw;
@@ -82,7 +87,12 @@ font-weight: 600;
 .small-bird-title{
   font-weight: 600;
 }
+
+@media all and (min-width: 431px) and (max-width: 701px) {}
+
+
 @media all and (min-width: 431px) and (max-width: 701px) {
+  /* header */
   .title{
     font-size: 6vh !important;
   }
@@ -93,11 +103,12 @@ font-weight: 600;
   .link{
     font-size: 2vh !important;
   }
+  /* introduction */
   .cornellTag{
     width: 20vw
   }
   .feather-button{
-    height: 12vh;
+min-height: 6vh;
   }
 }
 @media all and (max-width: 430px) {
@@ -120,7 +131,7 @@ font-weight: 600;
     width: 28vw
   }
   .feather-button{
-    height: 4vh;
+    height: 6vh;
     width: 10vw;
   }
   .feather-svg{

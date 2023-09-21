@@ -12,7 +12,7 @@ export default function Intro() {
   const [open, setOpen] = useState(false);
   return (
     <div className="intro">
-      <Container>
+      <Container fluid>
         {" "}
         <Row>
           <Col>
@@ -21,7 +21,7 @@ export default function Intro() {
               type="button"
               data-toggle="collapse"
               data-target="#collapseTarget"
-              className="mt-2 mb-2 feather-button d-flex align-middle justify-content-center"
+              className="m-5 mt-2 mb-2 feather-button d-flex align-middle justify-content-center"
               onClick={() => setOpen(!open)}
               aria-controls="collapseTarget"
               aria-expanded={false}
@@ -30,7 +30,7 @@ export default function Intro() {
             </Button>
           </Col>
 
-          <Col className="d-flex flex-row-reverse m-3">
+          <Col className="d-flex flex-row-reverse mb-2">
             {" "}
             <img
               className="cornellTag m-0"

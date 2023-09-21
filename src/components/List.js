@@ -30,6 +30,7 @@ import CoopersHawk from "../bird-cards/Coopers-Hawk";
 import BroadtailedHummingbird from "../bird-cards/Broad-Tailed-Hummingbird";
 import FerruginousHawk from "../bird-cards/Ferruginous-Hawk";
 import NorthernGoshawk from "../bird-cards/Northern-Goshawk";
+import RockPigeon from "../bird-cards/Rock-Pigeon";
 
 export default function List() {
   const [index, setIndex] = useState(0);
@@ -130,8 +131,17 @@ export default function List() {
           </Col>
         </Row>
 
-        <FerruginousHawk />
-        <NorthernGoshawk />
+        <Row>
+          <Col xs={12} lg={4} className="p-0">
+            <FerruginousHawk />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <NorthernGoshawk />
+          </Col>
+          <Col xs={12} lg={4} className="p-0">
+            <RockPigeon />
+          </Col>
+        </Row>
       </Container>
     </>
   );
